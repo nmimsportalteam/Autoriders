@@ -25,6 +25,7 @@
     <link href="../../src/assets/css/light/custom.css" rel="stylesheet" type="text/css" />
     <link href="../../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
 
 </head>
 <body class="layout-boxed">
@@ -335,7 +336,7 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="fleetElements" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./component-tabs.html"> Vehicle Make </a>
+                                <a href="./component-tabs.html"> Vehicle Model </a>
                             </li>
                             <li>
                                 <a href="./component-accordion.html"> Vehicle Model  </a>
@@ -877,7 +878,8 @@
                                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="../menu.html">Menu</a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Fleet Management</li>
+                                                <li class="breadcrumb-item"><a href="../fleet-management/index.html">Fleet Mangement</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Vehicle Model</li>
 
                                             </ol>
                                         </nav>
@@ -889,110 +891,134 @@
                         </div>
                     </div>
                     <!--  END BREADCRUMBS  -->
+                    <div class="main-content">
 
-                    <div class="col-12">
-                        <h4 style="background-color: #3081d2; border-radius:  5px; padding: 7px; color: white;" class="d-flex align-items-center"><i class="fa-solid fa-server"></i> &nbsp; Master Data</h4>
-                    </div>
-                    
-                    <div class="row layout-top-spacing">
-
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <a href="./vehicle-make.html">
-                                <div class="card">
-                                    <div class="card-body custom-tab">
-                                        <i class="fa-solid fa-car-rear"></i>
-                                        <h6 class="my-2">Vehicle Make<h6>
-                                       
-                                    </div>
+                        <div class="table-template">
+                            <div class="table-header">
+                                <div class="table-title"><h3>Vehicle Model</h3></div>
+                                <div class="table-actions"> 
+                                    <button style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#add-vehicle-model-modal"><i class="fa-regular fa-square-plus"></i> </button> 
                                 </div>
-                            </a>
-                        </div>
+                            </div>
 
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <a href="./vehicle-category.html">
-                                <div class="card">
-                                    <div class="card-body custom-tab">
-                                        <i class="fa-solid fa-truck-pickup"></i>
-                                        <h6 class="my-2">Vehicle Category<h6>
+                            <div class="table-content">
+                                <div class="table-filter-container"></div>
+                                <div class="table-content">
+
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> Sr. No.</th>
+                                                    <th scope="col">Model Name</th>
+                                                    <th scope="col">Model</th>
+                                                    <th class="text-center" scope="col"> Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        Eicher 2075 Bus
+                                                    </td>
+                                                    <td>Eicher</td>
+                                                    <td class="text-center">
+                                                        <div class="action-btns">
+                                                            
+                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                    
+                                                <tr>
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>
+                                                        Audi A4
+                                                    </td>
+                                                    <td> Audi </td>
+                                                    <td class="text-center">
+                                                        <div class="action-btns">
+                                                           
+                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                    
+                                                <tr>
+                                                    <td>
+                                                        3
+                                                    </td>
+                                                    <td>
+                                                        BMW 3 Series
+                                                    </td>
+                                                    <td>
+                                                        BMW
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="action-btns">
+                                                           
+                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                    
+                                                <tr>
+                                                    <td>
+                                                        4
+                                                    </td>
+                                                    <td>
+                                                        Tata TIGOR EV
+                                                    </td>
+                                                    <td>
+                                                        Tata
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="action-btns">
+                                                         
+                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                                                            </a>
+                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                    
+                                                
+                                            </tbody>
+                                        </table>
                                     
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <a href="./vehicle-model.html">
-                                <div class="card">
-                                    <div class="card-body custom-tab">
-                                        <i class="fa-solid fa-van-shuttle"></i>
-                                        <h6 class="my-2">Vehicle Model<h6>
-                                    
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
 
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <div class="card">
-                                <div class="card-body custom-tab">
-                                    <i class="fa-solid fa-fire-flame-simple"></i>
-                                    <h6 class="my-2">Fuel Type<h6>
-                                   
                                 </div>
                             </div>
+
                         </div>
 
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <div class="card">
-                                <div class="card-body custom-tab">
-                                    <i class="fa-solid fa-gas-pump"></i>
-                                    <h6 class="my-2">Fuel Pump<h6>
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <div class="card">
-                                <div class="card-body custom-tab">
-                                    <i class="fa-solid fa-money-check-dollar"></i>
-                                    <h6 class="my-2">Fuel Rate Master<h6>
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        
-
+                       
                     </div>
 
-                    <div class="col-12">
-                        <h4 style="background-color: #3081d2; border-radius:  5px; padding: 7px; color: white;" class="d-flex align-items-center"><i class="fa-solid fa-database"></i> &nbsp; Asset Management</h4>
-                    </div>
 
-                    <div class="row layout-top-spacing">
-
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <div class="card">
-                                <div class="card-body custom-tab">
-                                    <i class="fa-regular fa-id-card"></i>
-                                    <h6 class="my-2">Vehicle Profile</h6>
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
-                            <div class="card">
-                                <div class="card-body custom-tab">
-                                    <i class="fa-solid fa-folder-open"></i>
-                                    <h6 class="my-2">Vehicle Document</h6>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -1009,6 +1035,69 @@
     </div>
     <!-- END MAIN CONTAINER -->
 
+    <!--ADD Modal -->
+    <div class="modal fade" id="add-vehicle-model-modal" tabindex="-1" role="dialog" aria-labelledby="add-vehicle-model-modal"
+    aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content modal-inputform">
+                <div class="modal-header  modal-inputform-header">
+                    <h5 class="modal-title text-dark" id="">ADD MODEL</h5>
+                    <button type="button" class="btn fs-4 text-dark" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fas fa-times"></i></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="row info-container">
+                        <div class="col-md-3 select-fields">
+                        
+                            <div class="input-group mb-3 d-flex flex-column">
+                                <label class="form-label">Vehicle's Model</label>
+                                <input type="text" name="vehicle-model" id="vehicle-model" class="form-control w-100">
+                                
+                            </div>
+
+                            <div class="input-group mb-3 d-flex flex-column">
+                                <select id="select-make" placeholder="Select a Vehicle Make..." autocomplete="off">
+                                    <option value="">Select a Make...</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">Bharat Benz</option>
+                                    <option value="3">BMW</option>
+                                    <option value="4">Tata</option>
+                                </select>
+                                
+                            </div>
+
+                            
+                            <div class="mb-3 d-grid gap-2">
+                                <button class="btn text-light add-vehicle-model btn-info">ADD</button>
+                            </div>
+
+                            
+                        </div>
+                        <div class="col-md-9 selected-fields">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="add-more-vehicle-model-table">
+                                    <thead>
+                                        <th>Sr No.</th>
+                                        <th>Vehicle Make</th>
+                                        <th>Vehicle Model</th>
+                                        <th>Action</th>
+                                    </thead>
+                                    <tbody>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn create-vehicle-model btn-primary">CREATE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../src/fontawesome-free-6.4.0-web/js/all.min.js"></script>
@@ -1022,6 +1111,51 @@
     <script src="../../src/plugins/src/apex/apexcharts.min.js"></script>
     <script src="../../src/assets/js/dashboard/dash_1.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <!-- CUSTOM JS SCRIPT -->
+    <script>
+        // SELECT INITIALIZATION
+        new TomSelect("#select-make",{
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+
+        let addVehicleModel = document.querySelector('.add-vehicle-model');
+        let vehicleModel;
+        let addTable = document.querySelector('#add-more-vehicle-model-table tbody');
+        let tableRow=``;
+        let count = 0;
+
+        addVehicleModel.addEventListener('click', function() {
+           
+            vehicleModel = document.querySelector('#vehicle-model').value;
+            vehicleMake = document.querySelector('#select-make').text();
+            tableRow = `<tr>
+                            <td>${++count}</td>
+                            <td>${vehicleMake}</td>
+                            <td>${vehicleModel}</td>
+                            <td><button class = 'delete-row'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                </button></td>
+                        </tr>`
+
+            addTable.insertAdjacentHTML('beforeend', tableRow)
+            console.log('clicked!!', vehicleModel)
+
+        })
+
+        document.addEventListener('click', function(ele){
+       
+            console.log('Delete Clicked', ele.target)
+            if(ele.target.classList.contains('delete-row') || ele.target.classList.contains('feather-trash-2')){
+                ele.target.closest('tr').remove();
+            }
+        })
+    </script>
 
 </body>
 </html>
