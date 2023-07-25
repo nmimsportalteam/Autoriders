@@ -25,8 +25,9 @@
     <link href="../../src/assets/css/light/custom.css" rel="stylesheet" type="text/css" />
     <link href="../../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
 
+     <!-- tomselect -->
+     <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
 </head>
 <body class="layout-boxed">
     <!-- BEGIN LOADER -->
@@ -885,7 +886,7 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="../menu.html">Menu</a></li>
                                                 <li class="breadcrumb-item"><a href="../fleet-management/index.html">Fleet Mangement</a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Vehicle Model</li>
+                                                <li class="breadcrumb-item active" aria-current="page">Vehicle Acriss</li>
 
                                             </ol>
                                         </nav>
@@ -897,181 +898,456 @@
                         </div>
                     </div>
                     <!--  END BREADCRUMBS  -->
+                    <!-- Main Content -->
+
+
                     <div class="main-content">
 
                         <div class="table-template">
                             <div class="table-header">
-                                <div class="table-title"><h3>Vehicle Model</h3></div>
-
-                                <div class="d-flex align-content-center">
-                                    <div class="table-actions me-5 d-flex align-content-center"> 
-                                        <label for="acriss-code" style="margin: 2px 0" class="text-white">Acriss Code</label>
-                                        <button style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#add-vehicle-acriss"><i class="fa-regular fa-square-plus"></i> </button> 
-                                    </div>
-                                    
-                                    <div class="table-actions d-flex align-content-center"> 
-                                        <label for="acriss-code" style="margin: 2px 0" class="text-white">Add Vehicle Model</label>
-                                        <button style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#add-vehicle-model-modal"><i class="fa-regular fa-square-plus"></i> </button> 
-                                    </div>
+                                <div class="table-title"><h3>Vehicle Acriss</h3></div>
+                                <!-- <div class="table-actions"> 
+                                    <button style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#add-service-city-modal"><i class="fa-regular fa-square-plus"></i> </button> 
+                                </div> -->
+                                <div class="table-actions me-5 d-flex align-content-center"> 
+                                    <label for="acriss-code" style="margin: 2px 0" class="text-white">Acriss Code</label>
+                                    <button style="background: none; border: none;" data-bs-toggle="modal" data-bs-target="#add-vehicle-acriss"><i class="fa-regular fa-square-plus"></i> </button> 
                                 </div>
                             </div>
 
+                            
                             <div class="table-content">
                                 <div class="table-filter-container"></div>
-                                <div class="table-content">
+                                    <div class="table-content">
+ 
+                                    <!-- Vehicle Acriss START -->
+                                        <div class="col-lg-12">
 
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Sr. No.</th>
-                                                    <th scope="col">Model</th>
-                                                    <th scope="col">Make</th>
-                                                    <th scope="col">Category</th>
-                                                    <th scope="col">ACRISS ID</th>
-                                                    <th scope="col">Fuel Capacity</th>
-                                                    <th scope="col">Pax Capacity</th>
-                                                    <th scope="col">Luggage Capacity</th>
-                                                    <th scope="col">Seat Count</th>
-                                                    <th scope="col">Fuel Average in KM</th>
-                                                    <th scope="col">Is Auto Transmission</th>
-                                                    <th class="text-center" scope="col"> Actions</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        Eicher 2075 Bus
-                                                    </td>
-                                                    <td>Eicher</td>
-                                                    <td>22 Seater Mini Bus</td>
-                                                    <td>A</td>
-                                                    <td>150 ltr.</td>
-                                                    <td>22</td>
-                                                    <td>500 kg</td>
-                                                    <td>22</td>
-                                                    <td>10 KMPL</td>
-                                                    <td>No</td>
-                                                    <td class="text-center">
-                                                        <div class="action-btns">
-                                                            
-                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                            </a>
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item mb-3 border-0">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                          ACRISS CATEGORY
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr class="text-black">
+                                                                    <th scope="col">Sr. No.</th>
+                                                                    <th scope="col">Acress Category</th>
+                                                                    <th scope="col">Acress Code</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">1</th>
+                                                                    <td>Mini</td>
+                                                                    <td>M</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">2</th>
+                                                                    <td>Mini Elite</td>
+                                                                    <td>N</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">3</th>
+                                                                    <td>Economy</td>
+                                                                    <td>E</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">4</th>
+                                                                    <td>Economy Elite</td>
+                                                                    <td>H</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">5</th>
+                                                                    <td>Compact</td>
+                                                                    <td>C</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">6</th>
+                                                                    <td>Compact Elite</td>
+                                                                    <td>D</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">7</th>
+                                                                    <td>Intermediate</td>
+                                                                    <td>I</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">8</th>
+                                                                    <td>Intermediate Elite</td>
+                                                                    <td>J</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">9</th>
+                                                                    <td>Standard</td>
+                                                                    <td>S</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">10</th>
+                                                                    <td>Standard Elite</td>
+                                                                    <td>R</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">11</th>
+                                                                    <td>Fullsize</td>
+                                                                    <td>F</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">12</th>
+                                                                    <td>Fullsize Elite</td>
+                                                                    <td>G</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">13</th>
+                                                                    <td>Premium</td>
+                                                                    <td>P</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">14</th>
+                                                                    <td>Premium Elite</td>
+                                                                    <td>U</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">15</th>
+                                                                    <td>Luxury</td>
+                                                                    <td>L</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">16</th>
+                                                                    <td>Luxury Elite</td>
+                                                                    <td>W</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">17</th>
+                                                                    <td>Oversize</td>
+                                                                    <td>O</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">18</th>
+                                                                    <td>Special</td>
+                                                                    <td>X</td>
+                                                                  </tr>
+                                                    
+                                                                </tbody>
+                                                            </table>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                    
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        Audi A4
-                                                    </td>
-                                                    <td> Audi </td>
-                                                    <td>Luxury</td>
-                                                    <td>A</td>
-                                                    <td>80 ltr.</td>
-                                                    <td>4</td>
-                                                    <td>100 kg</td>
-                                                    <td>4</td>
-                                                    <td>7 KMPL</td>
-                                                    <td>No</td>
-                                                    <td class="text-center">
-                                                        <div class="action-btns">
-                                                           
-                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                            </a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3 border-0">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                          ACRISS TYPE
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr class="text-black">
+                                                                    <th scope="col">Sr. No.</th>
+                                                                    <th scope="col">Acress Type</th>
+                                                                    <th scope="col">Acress Code</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">1</th>
+                                                                    <td>2-3 Door</td>
+                                                                    <td>B</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">2</th>
+                                                                    <td>2/4 Door</td>
+                                                                    <td>C</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">3</th>
+                                                                    <td>4-5 Door</td>
+                                                                    <td>D</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">4</th>
+                                                                    <td>Wagon/Estate</td>
+                                                                    <td>W</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">5</th>
+                                                                    <td>Passanger Van</td>
+                                                                    <td>V</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">6</th>
+                                                                    <td>Limousine/Sedan</td>
+                                                                    <td>L</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">7</th>
+                                                                    <td>Sport</td>
+                                                                    <td>S</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">8</th>
+                                                                    <td>Convertible</td>
+                                                                    <td>T</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">9</th>
+                                                                    <td>SUV</td>
+                                                                    <td>F</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">10</th>
+                                                                    <td>Open Air All Terrain</td>
+                                                                    <td>J</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">11</th>
+                                                                    <td>Special</td>
+                                                                    <td>X</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">12</th>
+                                                                    <td>Pick up (single/extended cab) 2 door</td>
+                                                                    <td>P</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">13</th>
+                                                                    <td>Pick up (double cab) 4 door</td>
+                                                                    <td>Q</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">14</th>
+                                                                    <td>Special Offer Car</td>
+                                                                    <td>Z</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">15</th>
+                                                                    <td>Coupe</td>
+                                                                    <td>E</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">16</th>
+                                                                    <td>Monospace</td>
+                                                                    <td>M</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">17</th>
+                                                                    <td>Recreational Vehicle</td>
+                                                                    <td>R</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">18</th>
+                                                                    <td>Motor Home</td>
+                                                                    <td>H</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">19</th>
+                                                                    <td>2 Wheel Vehicle</td>
+                                                                    <td>Y</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">20</th>
+                                                                    <td>Roadster</td>
+                                                                    <td>N</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">21</th>
+                                                                    <td>Crossover</td>
+                                                                    <td>G</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">22</th>
+                                                                    <td>Commercial Van/Truck</td>
+                                                                    <td>K</td>
+                                                                  </tr>
+                                                    
+                                                                </tbody>
+                                                              </table>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                    
-                                                <tr>
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>
-                                                        BMW 3 Series
-                                                    </td>
-                                                    <td>
-                                                        BMW
-                                                    </td>
-                                                    <td>Hatchback</td>
-                                                    <td>A</td>
-                                                    <td>80 ltr.</td>
-                                                    <td>4</td>
-                                                    <td>100 kg</td>
-                                                    <td>4</td>
-                                                    <td>7 KMPL</td>
-                                                    <td>No</td>
-                                                    <td class="text-center">
-                                                        <div class="action-btns">
-                                                           
-                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                            </a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3 border-0">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                          ACRESS TRANSMISSION
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr class="text-black">
+                                                                    <th scope="col">Sr. No.</th>
+                                                                    <th scope="col">Acress Type</th>
+                                                                    <th scope="col">Acress Code</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row" class="px-4">1</th>
+                                                                        <td>Manual Unspecified Drive</td>
+                                                                        <td>M</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="px-4">2</th>
+                                                                        <td>Manual 4WD</td>
+                                                                        <td>N</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="px-4">3</th>
+                                                                        <td>Manual AWD</td>
+                                                                        <td>C</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="px-4">4</th>
+                                                                        <td>Auto Unspecified Drive</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="px-4">5</th>
+                                                                        <td>Auto 4WD</td>
+                                                                        <td>B</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="px-4">6</th>
+                                                                        <td>Auto AWD</td>
+                                                                        <td>D</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                    
-                                                <tr>
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>
-                                                        Tata TIGOR EV
-                                                    </td>
-                                                    <td>
-                                                        Tata
-                                                    </td>
-                                                    <td>Compact</td>
-                                                    <td>A</td>
-                                                    <td>80 ltr.</td>
-                                                    <td>4</td>
-                                                    <td>180 kg</td>
-                                                    <td>4</td>
-                                                    <td>20 KMPL</td>
-                                                    <td>No</td>
-                                                    <td class="text-center">
-                                                        <div class="action-btns">
-                                                         
-                                                            <a href="javascript:void(0);" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
-                                                            </a>
-                                                            <a href="javascript:void(0);" class="action-btn btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                            </a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3 border-0">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                                          ACRESS FUEL
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                  <tr class="text-black">
+                                                                    <th scope="col">Sr. No.</th>
+                                                                    <th scope="col">Acress Category</th>
+                                                                    <th scope="col">Acress Code</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">1</th>
+                                                                    <td>Unspecified Fuel/Power with Air</td>
+                                                                    <td>R</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">2</th>
+                                                                    <td>Unspecified Fuel/Power without Air</td>
+                                                                    <td>N</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">3</th>
+                                                                    <td>Diesel Air</td>
+                                                                    <td>D</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">4</th>
+                                                                    <td>Diesel No Air</td>
+                                                                    <td>Q</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">5</th>
+                                                                    <td>Hybrid Air</td>
+                                                                    <td>H</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">6</th>
+                                                                    <td>Hybrid Plug in Air</td>
+                                                                    <td>I</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">7</th>
+                                                                    <td>Electric (Distance < 250mi/400km) Air</td>
+                                                                    <td>E</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">8</th>
+                                                                    <td>Electric Plus (Distance >= 250mi/400km) Air</td>
+                                                                    <td>C</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">9</th>
+                                                                    <td>LPG/Compressed Gas Air</td>
+                                                                    <td>L</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">10</th>
+                                                                    <td>LPG/Compressed Gas No Air</td>
+                                                                    <td>S</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">11</th>
+                                                                    <td>Hyrogen Air</td>
+                                                                    <td>A</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">12</th>
+                                                                    <td>Hydrogen No Air</td>
+                                                                    <td>B</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">13</th>
+                                                                    <td>Multi Fuel/Power Air</td>
+                                                                    <td>M</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">14</th>
+                                                                    <td>Multi Fuel/Power No Air</td>
+                                                                    <td>F</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">15</th>
+                                                                    <td>Petrol Air</td>
+                                                                    <td>V</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">16</th>
+                                                                    <td>Petrol No Air</td>
+                                                                    <td>Z</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">17</th>
+                                                                    <td>Ethanol Air</td>
+                                                                    <td>U</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="px-4">18</th>
+                                                                    <td>Ethanol No Air</td>
+                                                                    <td>X</td>
+                                                                  </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                    
-                                                
-                                            </tbody>
-                                        </table>
-                                    
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                        </div>
+
                                     </div>
-
-                                </div>
+                                    <!-- Vehicle Acriss END -->
                             </div>
-
                         </div>
-
-                       
                     </div>
+
+
+
+
+
+                    <!-- End Main Content -->
 
 
                 </div>
@@ -1089,11 +1365,12 @@
 
     </div>
     <!-- END MAIN CONTAINER -->
-    <!-- ADD Modal for Acriss COde -->
 
+    <!--ADD Modal -->
     <div class="modal fade" id="add-vehicle-acriss" tabindex="-1" role="dialog" aria-labelledby="add-vehicle-acriss"
     aria-hidden="true">
         <div class="modal-dialog" role="document">
+            <!-- <div class="modal-content modal-inputform w-50 m-auto h-50"> -->
             <div class="modal-content modal-inputform">
                 <div class="modal-header  modal-inputform-header">
                     <h5 class="modal-title text-dark" id="">ADD ACRISS DETAILS</h5>
@@ -1101,9 +1378,9 @@
                             class="fas fa-times"></i></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
+                    <div class="row mb-4">
                             <div class="col-lg-6 col-md-6">
-                                <div class="input-group mb-3 d-flex flex-column">
+                                <div class="input-group mb-3">
                                     <label class="form-label">Select Category</label>
                                     <select id="select-acriss-category" class="p-2 w-100" placeholder="Select Vehicle Category..." autocomplete="off">
                                         <option value="">Select vehicle category...</option>
@@ -1130,7 +1407,7 @@
                             </div>
                             
                             <div class="col-lg-6 col-md-6">
-                                <div class="input-group mb-3 d-flex flex-column">
+                                <div class="input-group mb-3">
                                     <label class="form-label">Select Type</label>
                                     <select id="select-type"  class="p-2 w-100" placeholder="Select Vehicle Type..." autocomplete="off">
                                         <option value="">Select vehicle Type...</option>
@@ -1161,7 +1438,7 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6">
-                                <div class="input-group mb-3 d-flex flex-column">
+                                <div class="input-group mb-3 ">
                                     <label class="form-label">Select Transmission</label>
                                     <select id="select-fuel" class="p-2 w-100" placeholder="Select vehicle Transmission..." autocomplete="off">
                                         <option value="">Select vehicle Transmission...</option>
@@ -1176,7 +1453,7 @@
                             </div>
                                 
                             <div class="col-lg-6 col-md-6">
-                                <div class="input-group mb-3 d-flex flex-column">
+                                <div class="input-group mb-3 ">
                                     <label class="form-label">Select Fuel</label>
                                     <select id="select-transmission" class="p-2 w-100" placeholder="Select Vehicle Fuel..." autocomplete="off">
                                         <option value="">Select vehicle Fuel...</option>
@@ -1202,156 +1479,13 @@
                                 </div> 
                             </div>
                     </div>
+
                     <div class="w-50 mx-auto" style="background-color: #eee;">
                         <p class="p-2">ACRESS CODE :</p>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">GENERATE</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--ADD Modal For Vehicle Model-->
-    <div class="modal fade" id="add-vehicle-model-modal" tabindex="-1" role="dialog" aria-labelledby="add-vehicle-model-modal"
-    aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen" role="document">
-            <div class="modal-content modal-inputform">
-                <div class="modal-header  modal-inputform-header">
-                    <h5 class="modal-title text-dark" id="">ADD MODEL DETAILS</h5>
-                    <button type="button" class="btn fs-4 text-dark" data-bs-dismiss="modal" aria-label="Close"><i
-                            class="fas fa-times"></i></button>
-
-                </div>
-                <div class="modal-body">
-                    <div class="row info-container">
-                        <div class="col-md-3 select-fields">
-                        
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Vehicle's Make</label>
-                                <select id="select-make" placeholder="Select a Vehicle Make..." autocomplete="off">
-                                    <option value="">Select a Make...</option>
-                                    <option value="Audi">Audi</option>
-                                    <option value="Bharat Benz">Bharat Benz</option>
-                                    <option value="BMW">BMW</option>
-                                    <option value="Tata">Tata</option>
-                                </select>
-                                
-                            </div>  
-  
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Vehicle's Category</label>
-                                <select id="select-category" placeholder="Select a Vehicle Category..." autocomplete="off">
-                                    <option value="">Select a Category...</option>
-                                    <option value="22 Seater Mini Bus">22 Seater Mini Bus</option>
-                                    <option value="Compact (Etios, Dzire)">Compact (Etios, Dzire)</option>
-                                    <option value="Hatchback">Hatchback</option>
-                                    <option value="Luxury">Luxury</option>
-                                </select>
-                                
-                            </div>
-                        
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Vehicle's Model</label>
-                                <input type="text" name="vehicle-model" id="vehicle-model" class="form-control w-100">
-                                
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Model Year</label>
-                                <input type="number" name="model-year" id="model-year" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">ACRISS Code</label>
-                                <input type="number" name="acriss-code" id="acriss-code" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Door Count</label>
-                                <input type="number" name="door-count" id="door-count" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Fuel Capacity</label>
-                                <input type="number" name="fuel-capacity" id="fuel-capacity" class="form-control w-100">
-                            </div>
-                            
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Pax Capacity</label>
-                                <input type="number" name="pax-capacity" id="pax-capacity" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Luggage Capacity</label>
-                                <input type="number" name="luggage-capacity" id="luggage-capacity" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Seat Count</label>
-                                <input type="number" name="seat-count" id="seat-count" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Fuel Average in KM</label>
-                                <input type="number" name="fuel-average-km" id="fuel-average-km" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Fuel Average in Min.</label>
-                                <input type="number" name="fuel-average-min" id="fuel-average-min" class="form-control w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Is Air conditioner Available</label>
-                                <input type="checkbox" name="is-ac" id="is-ac" class="form-check-input w-100">
-                            </div>
-
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Is Auto Transmission Available</label>
-                                <input type="checkbox" name="is-auto" id="is-auto" class="form-check-input w-100">
-                            </div>
-
-                            <div class="mb-3 d-grid gap-2">
-                                <button class="btn text-light add-vehicle-model btn-info">ADD</button>
-                            </div>
-
-                            
-                        </div>
-                        <div class="col-md-9 selected-fields">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="add-more-vehicle-model-table">
-                                    <thead>
-                                        <th>Sr No.</th>
-                                        <th>Vehicle Make</th>
-                                        <th>Vehicle Category</th>
-                                        <th>Vehicle Model</th>
-                                        <th>Model Year</th>
-                                        <th>ACRISS Code</th>
-                                        <th>Door Count</th>
-                                        <th>Fuel Capacity</th>
-                                        <th>Pax Capacity</th>
-                                        <th>Luggage Capacity</th>
-                                        <th>Seat Count</th>
-                                        <th>Fuel Average in KM</th>
-                                        <th>Fuel Average in Min.</th>
-                                        <th>Is A.C</th>
-                                        <th>Is Auto Transmission</th>
-                                        <th>Action</th>
-                                    </thead>
-                                    <tbody>
-                                       
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn create-vehicle-model btn-primary">CREATE</button>
                 </div>
             </div>
         </div>
@@ -1370,11 +1504,14 @@
     <script src="../../src/plugins/src/apex/apexcharts.min.js"></script>
     <script src="../../src/assets/js/dashboard/dash_1.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+    <!-- tomselect -->
     <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+
     <!-- CUSTOM JS SCRIPT -->
     <script>
-        // SELECT INITIALIZATION
-        new TomSelect("#select-make",{
+
+        new TomSelect("#select-category",{  
             create: true,
             sortField: {
                 field: "text",
@@ -1382,7 +1519,23 @@
             }
         });
 
-        new TomSelect("#select-category",{
+        new TomSelect("#select-type",{  
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#select-transmission",{  
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#select-fuel",{  
             create: true,
             sortField: {
                 field: "text",
@@ -1391,71 +1544,38 @@
         });
 
 
+        let addVehicleMake = document.querySelector('.add-vehicle-make');
+        let acrissObj = {
+            acrissCategory: '', 
+            acrissType: '', 
+            acrissTrans: '', 
+            acrissFuel: '', 
 
-        let addVehicleModel = document.querySelector('.add-vehicle-model');
-        let vehicleModelObject= {
-            make: '',
-            category: '',
-            model: '',
-            modelYear: '',
-            acrissCode: '',
-            doorCount: '',
-            fuelCapacity: '',
-            paxCapacity: '',
-            luggageCapacity: '',
-            seatCount: '',
-            fuelAvgKm: '',
-            fuelAvgMin: '',
-            isAC:'',
-            isAutoTransmission: ''
         };
-        
-        let addTable = document.querySelector('#add-more-vehicle-model-table tbody');
+        let addTable = document.querySelector('#add-more-vehicle-make-table tbody');
         let tableRow=``;
         let count = 0;
 
-        addVehicleModel.addEventListener('click', function() {
+        addVehicleMake.addEventListener('click', function() {
            
-            vehicleModelObject.make = document.querySelector('#select-make').value;
-            vehicleModelObject.category = document.querySelector('#select-category').value;
-            vehicleModelObject.model = document.querySelector('#vehicle-model').value;
-            vehicleModelObject.modelYear = document.querySelector('#model-year').value;
-            vehicleModelObject.acrissCode = document.querySelector('#acriss-code').value;
-            vehicleModelObject.doorCount = document.querySelector('#door-count').value;
-            vehicleModelObject.fuelCapacity = document.querySelector('#fuel-capacity').value;
-            vehicleModelObject.paxCapacity = document.querySelector('#pax-capacity').value;
-            vehicleModelObject.luggageCapacity = document.querySelector('#luggage-capacity').value;
-            vehicleModelObject.seatCount = document.querySelector('#seat-count').value;
-            vehicleModelObject.fuelAvgKm = document.querySelector('#fuel-average-km').value;
-            vehicleModelObject.fuelAvgMin = document.querySelector('#fuel-average-min').value;
-            vehicleModelObject.isAC = document.querySelector('#is-ac').checked == true ? 'Yes' : 'No';
-            vehicleModelObject.isAutoTransmission = document.querySelector('#is-auto').checked == true ? 'Yes' : 'No';
-
-
+            acrissObj.acrissCategory = document.querySelector('#select-category').value;
+            acrissObj.acrissType = document.querySelector('#select-type').value;
+            acrissObj.acrissTrans = document.querySelector('#select-transmission').value;
+            acrissObj.acrissFuel = document.querySelector('#select-fuel').value;
 
             tableRow = `<tr>
                             <td>${++count}</td>
-                            <td>${vehicleModelObject.make}</td>
-                            <td>${vehicleModelObject.category}</td>
-                            <td>${vehicleModelObject.model}</td>
-                            <td>${vehicleModelObject.modelYear}</td>
-                            <td>${vehicleModelObject.acrissCode}</td>
-                            <td>${vehicleModelObject.doorCount}</td>
-                            <td>${vehicleModelObject.fuelCapacity}</td>
-                            <td>${vehicleModelObject.paxCapacity}</td>
-                            <td>${vehicleModelObject.luggageCapacity}</td>
-                            <td>${vehicleModelObject.seatCount}</td>
-                            <td>${vehicleModelObject.fuelAvgKm}</td>
-                            <td>${vehicleModelObject.fuelAvgMin}</td>
-                            <td>${vehicleModelObject.isAC}</td>
-                            <td>${vehicleModelObject.isAutoTransmission}</td>
+                            <td>${acrissObj.acrissCategory}</td>
+                            <td>${acrissObj.acrissType}</td>
+                            <td>${acrissObj.acrissTrans}</td>
+                            <td>${acrissObj.acrissFuel}</td>
                             <td><button class = 'delete-row'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
                                 </button></td>
                         </tr>`
 
             addTable.insertAdjacentHTML('beforeend', tableRow)
-            console.log('clicked!!', vehicleModelObject)
+            console.log('clicked!!', acrissObj)
 
         })
 
@@ -1466,18 +1586,6 @@
                 ele.target.closest('tr').remove();
             }
         })
-    
-        //Add From Form
-        // let makeAddBtn = document.querySelector('#add-vehicle-model-modal .add-vehicle-make');
-        // let vehicleMakeOption = ``;
-        // makeAddBtn.addEventListener('click', function() {
-        //     vehicleMake = document.querySelector('#vehicle-make').value;
-        //     vehicleMakeOption = `<option>${vehicleMake}</option>`;
-
-        //     document.querySelector('#add-vehicle-model-modal #select-make').insertAdjacentHTML('beforeend', vehicleMakeOption);
-           
-        // })
-
     </script>
 
 </body>
