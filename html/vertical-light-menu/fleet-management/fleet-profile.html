@@ -1098,7 +1098,7 @@
 
                             <div class="input-group mb-3 d-flex flex-column">
                                 <label class="form-label">Ownership</label>
-                                <select id="select-service-city" placeholder="Select a Ownership..." autocomplete="off">
+                                <select id="select-ownership" placeholder="Select a Ownership..." autocomplete="off">
                                     <option value="">Select a Ownership...</option>
                                     <option value="self">Self</option>
                                     <option value="attached">attached</option>
@@ -1195,13 +1195,29 @@
             }
         });
 
-        // new TomSelect("#select-category",{
-        //     create: true,
-        //     sortField: {
-        //         field: "text",
-        //         direction: "asc"
-        //     }
-        // });
+        new TomSelect("#select-service-city",{
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#select-ownership",{
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#select-vendor",{
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
 
 
         let addVehicleModel = document.querySelector('.add-fleet-profile');
@@ -1267,7 +1283,7 @@
                         </tr>`
 
             addTable.insertAdjacentHTML('beforeend', tableRow)
-            console.log('clicked!!', vehicleModelObject)
+            console.log('clicked!!', vehicleModelObject)    
 
         })
 
