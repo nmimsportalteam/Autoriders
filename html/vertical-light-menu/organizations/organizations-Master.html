@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Organizations</title>
+    <title>Organizations Master</title>
     <link rel="icon" type="image/x-icon" href="../../src/assets/img/favicon.ico" />
     <link href="../../layouts/vertical-light-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../../layouts/vertical-light-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -31,6 +31,19 @@
     <link href="../../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
+    <style>
+        .ts-control {
+            line-height: 30px;
+            border-radius: 8px;
+            background-color: #f1f2f3;
+        }
+
+        .full .ts-control {
+            line-height: 30px;
+            border-radius: 8px;
+            background-color: #f1f2f3;
+        }
+    </style>
 </head>
 
 <body class="layout-boxed">
@@ -569,7 +582,7 @@
                         </ul>
                     </li>
 
-                    <li class="menu">
+                    <!-- <li class="menu">
                         <a href="#corporateElements" data-bs-toggle="collapse" aria-expanded="false"
                             class="dropdown-toggle">
                             <div class="">
@@ -635,9 +648,9 @@
                                 <a href="#"> TDS Config </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
 
-                    <li class="menu">
+                    <!-- <li class="menu">
                         <a href="#vendorElements" data-bs-toggle="collapse" aria-expanded="false"
                             class="dropdown-toggle">
                             <div class="">
@@ -677,7 +690,7 @@
                             </li>
 
                         </ul>
-                    </li>
+                    </li> -->
 
                     <li class="menu active">
                         <a href="#organizationsElements" data-bs-toggle="collapse" aria-expanded="false"
@@ -696,20 +709,20 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="organizationsElements"
                             data-bs-parent="#accordionExample">
-                            <li>
-                                <a href="./organizations-type.html"> Type </a>
-                            </li>
-                            <li>
-                                <a href="./organizations-Groups.html"> Groups </a>
-                            </li>
-                            <li>
-                                <a href="./organizations-Entity.html"> Entity </a>
-                            </li>
-                            <li>
-                                <a href="./organizations-Industry.html"> Industry </a>
-                            </li>
                             <li class="active">
                                 <a href="./organizations-Master.html"> Organizations Master </a>
+                            </li>
+                            <li>
+                                <a href="./organizations-type.html"> Organizations Type </a>
+                            </li>
+                            <li>
+                                <a href="./organizations-Groups.html"> Organizations Groups </a>
+                            </li>
+                            <li>
+                                <a href="./organizations-Entity.html"> Organizations Entity </a>
+                            </li>
+                            <li>
+                                <a href="./organizations-Industry.html"> Organizations Industry </a>
                             </li>
 
                         </ul>
@@ -988,7 +1001,7 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="../menu.html">Menu</a></li>
                                                 <li class="breadcrumb-item"><a
-                                                        href="../fleet-management/index.html">Organizations</a></li>
+                                                        href="../organizations/index.html">Organizations</a></li>
                                                 <li class="breadcrumb-item active" aria-current="page">Organizations
                                                     Master</li>
 
@@ -1011,14 +1024,17 @@
                                     <h3>Organizations Master</h3>
                                 </div>
                                 <div class="table-actions">
-                                    <button style="background: none; border: none;" data-bs-toggle="modal"
-                                        data-bs-target="#add-country-modal"><i class="fa-regular fa-square-plus"></i>
+
+                                    <button onclick="addorganizations()" style="background: none; border: none;"
+                                        data-bs-toggle="modal" data-bs-target="#add-country-modal">
+                                        <!-- <label class="text-white fw-bold me-1 justify-content-center">Add</label> -->
+                                        <i class="fa-regular fa-square-plus"></i>
                                     </button>
                                 </div>
                             </div>
 
                             <!-- tabel START -->
-                            <div class="table-content">
+                            <div class="table-content" id="org-table-content">
                                 <div class="table-filter-container"></div>
                                 <div class="table-content">
 
@@ -1214,76 +1230,249 @@
                             <!-- tabel END -->
 
                             <!-- add-organizations START -->
-                            <div id="add-organizations" class="add-organizations p-4 ">
-                                <form action="">
-                                    <div class="row">
+                            <div id="add-new-organizations" class="add-organizations p-4 d-none">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
 
-                                        <div class="col-lg-3">
-                                            <div class="input-group mb-3 d-flex flex-column">
-                                                <label class="form-label">Trade Name</label>
-                                                <input type="text" name="" id="" class="rounded-2 form-control w-100"
-                                                    style="background-color: #f1f2f3;">
+                                    <!-- Organizations START -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                aria-controls="panelsStayOpen-collapseOne">
+                                                Organizations
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <form action="">
+                                                    <div class="row">
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Trade Name</label>
+                                                                <input type="text" name="" id=""
+                                                                    placeholder="Enter Trade Name..."
+                                                                    class="rounded-2 form-control w-100"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Legal Name</label>
+                                                                <input type="text" name="" id=""
+                                                                    placeholder="Enter Legal Name..."
+                                                                    class="rounded-2 form-control w-100"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Parent</label>
+                                                                <select name="" id=""
+                                                                    class="rounded-2 form-control w-100"
+                                                                    style="background-color: #f1f2f3;">
+                                                                    <option value="Select Parent">Select Parent</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Industry</label>
+                                                                <select id="org-industry" autocomplete="off"
+                                                                    style="line-height: 30px;">
+                                                                    <option value="">Select a Industry...</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Entity</label>
+                                                                <select id="org-entity" autocomplete="off"
+                                                                    style="line-height: 30px;">
+                                                                    <option value="">Select a Entity...</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <button class="btn text-light btn-info">ADD & NEXT</button>
+                                                </form>
                                             </div>
                                         </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group mb-3 d-flex flex-column">
-                                                <label class="form-label">Legal Name</label>
-                                                <input type="text" name="" id="" class="rounded-2 form-control w-100"
-                                                    style="background-color: #f1f2f3;">
-                                            </div>
-                                        </div>
-
-                                        
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group mb-3 d-flex flex-column">
-                                                <label class="form-label">Parent</label>
-                                                <select name="" id="" class="rounded-2 form-control w-100"
-                                                    style="background-color: #f1f2f3;">
-                                                    <option value=""></option>
-                                                    <option value="Single"> </option>
-                                                    <option value="Marital"> </option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group mb-3 d-flex flex-column">
-                                                <label class="form-label">Industry</label>
-                                                <select name="" id="" class="rounded-2 form-control w-100"
-                                                    style="background-color: #f1f2f3;">
-                                                    <option value=""></option>
-                                                    <option value="Single"> </option>
-                                                    <option value="Marital"> </option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3">
-                                            <div class="input-group mb-3 d-flex flex-column">
-                                                <label class="form-label">Entity</label>
-                                                <select name="" id="tom-select" class="rounded-2 form-control w-100"
-                                                    style="background-color: #f1f2f3;">
-                                                    <option value=""></option>
-                                                    <option value="Single"> </option>
-                                                    <option value="Marital"> </option>
-                                                </select>
-                                            </div>
-                                        </div>
-
                                     </div>
-                                    <button class="btn text-light btn-info">ADD</button>
-                                </form>
+                                    <!-- Organizations END-->
+
+                                    <!-- Organizations-address START -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                Organizations address
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <form action="">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Address type</label>
+                                                                <select name="cars" id="cars"
+                                                                    class="form-control w-100 rounded-2"
+                                                                    style="background-color: #f1f2f3;">
+                                                                    <option value="">Select address type</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Address</label>
+                                                                <input type="text" name="" id=""
+                                                                    class="form-control w-100 rounded-2"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Country</label>
+                                                                <select id="org-country" autocomplete="off"
+                                                                    style="line-height: 30px;">
+                                                                    <option value="">Select a Country...</option>
+                                                                    <option value="India">India</option>
+                                                                    <option value=""></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">State</label>
+                                                                <select id="org-state" autocomplete="off"
+                                                                    style="line-height: 30px;">
+                                                                    <option value="">Select a State...</option>
+                                                                    <option value="Maharashtra">Maharashtra</option>
+                                                                    <option value=""></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">City</label>
+                                                                <select id="org-city" autocomplete="off"
+                                                                    style="line-height: 30px;">
+                                                                    <option value="">Select a City...</option>
+                                                                    <option value="Thane">Thane</option>
+                                                                    <option value="Mumbai">Mumbai</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Pin code</label>
+                                                                <input type="number" name="" id=""
+                                                                    placeholder="Enter Pin code..."
+                                                                    class="form-control w-100 rounded-2"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <button class="btn text-light btn-info">ADD & NEXT</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Organizations-address END -->
+
+                                    <!-- Organizations-contact-details START -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Organizations contact details
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <form action="">
+                                                    <div class="row">
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Contact type</label>
+                                                                <select name="cars" id=""
+                                                                    class="form-control w-100 rounded-2"
+                                                                    style="background-color: #f1f2f3;">
+                                                                    <option value="">Select address type</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Contact person</label>
+                                                                <input type="text" name="" id=""
+                                                                    class="form-control w-100 rounded-2"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Contact phone</label>
+                                                                <input type="number" name="" id=""
+                                                                    class="form-control w-100 rounded-2"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Contact Email</label>
+                                                                <input type="email" name="" id=""
+                                                                    class="form-control w-100 rounded-2"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <button class="btn text-light btn-info">ADD & NEXT</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Organizations-contact-details END-->
+                                </div>
                             </div>
                             <!-- add-organizations END -->
+
+
 
                         </div>
 
 
                     </div>
-
 
                 </div>
 
@@ -1303,10 +1492,6 @@
     <!-- END MAIN CONTAINER -->
 
 
-    <!--ADD Modal START -->
-
-    <!-- Add Modal END -->
-
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1322,16 +1507,67 @@
     <script src="../../src/assets/js/dashboard/dash_1.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 
+    <!--  -->
+    <script>
+        function addorganizations() {
+            document.getElementById('org-table-content').classList.toggle('d-none');
+            document.getElementById('add-new-organizations').classList.toggle('d-none');
+        }
+    </script>
+    <!--  -->
+
+    <!--  -->
+    <!-- <script>    
+        function addorganizations() {
+            document.getElementById('org-table-content').classList.toggle('d-none');
+            document.getElementById('add-new-organizations').classList.toggle('d-none');
+        }
+    </script> -->
+    <!--  -->
+
     <!-- tom-selecter-script-START -->
     <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
     <script>
-        new TomSelect(".tom-select", {
+        new TomSelect("#org-industry", {
             create: true,
             sortField: {
                 field: "text",
                 direction: "asc"
             }
-        }); 
+        });
+
+        new TomSelect("#org-entity", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#org-country", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#org-state", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#org-city", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
     </script>
     <!-- tom-selecter-script-END -->
 

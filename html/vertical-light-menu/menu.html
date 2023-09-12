@@ -40,9 +40,910 @@
         </div>
         <!--  END LOADER -->
 
-        <!--  BEGIN NAVBAR  -->
-        <div class="header-container container-xxl">
-            <header class="header navbar navbar-expand-sm expand-header">
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container container-xxl">
+        <header class="header navbar navbar-expand-sm expand-header">
+
+            <ul class="navbar-item theme-brand flex-row  text-center">
+                <li class="nav-item theme-logo">
+                    <a href="./menu.html">
+                        <img src="../src/assets/icons/logo2.png" alt="Autoriders logo">
+                    </a>
+
+                </li>
+                <!-- <li class="nav-item theme-text">
+                    <a href="index.html" class="nav-link">   </a>
+                </li> -->
+            </ul>
+
+            <!-- <div class="search-animated toggle-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <form class="form-inline search-full form-inline search" role="search">
+                    <div class="search-bar">
+                        <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </div>
+                </form>
+                <span class="badge badge-secondary">Ctrl + /</span>
+            </div> -->
+
+            <ul class="navbar-item flex-row ms-lg-auto ms-0 action-area">
+
+                <li class="nav-item dropdown notification-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-bell">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg><span class="badge badge-success"></span>
+                    </a>
+
+                    <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
+
+                        <div class="notification-scroll">
+
+                            <div class="drodpown-title notification mt-2">
+                                <h6 class="d-flex justify-content-between"><span
+                                        class="align-self-center">Notifications</span> <span
+                                        class="badge badge-secondary">3 New</span></h6>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media server-log">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-server">
+                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                        <line x1="6" y1="6" x2="6" y2="6"></line>
+                                        <line x1="6" y1="18" x2="6" y2="18"></line>
+                                    </svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Licence Expiring Soon</h6>
+                                            <p class="">40 minutes ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-x">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media file-upload">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-file-text">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Insurance Renewal</h6>
+                                            <p class="">2 days ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-x">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <div class="media ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-server">
+                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                        <line x1="6" y1="6" x2="6" y2="6"></line>
+                                        <line x1="6" y1="18" x2="6" y2="18"></line>
+                                    </svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class="">Licence Expiring Soon</h6>
+                                            <p class="">8 days ago</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-x">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="nav-item theme-toggle-item">
+                    <a href="javascript:void(0);" class="nav-link theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-moon dark-mode">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-sun light-mode">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown user-profile-dropdown order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-container">
+                            <div class="avatar avatar-sm avatar-indicators avatar-online">
+                                <img alt="avatar" src="../src/assets/img/profile-30.png" class="rounded-circle">
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <div class="emoji me-2">
+                                    &#x1F44B;
+                                </div>
+                                <div class="media-body">
+                                    <h5>Rohit Patel</h5>
+                                    <p>Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="user-profile.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-user">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg> <span>Profile</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="app-mailbox.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-inbox">
+                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                    <path
+                                        d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                                    </path>
+                                </svg> <span>Inbox</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="auth-boxed-lockscreen.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-lock">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg> <span>Lock Screen</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="auth-boxed-signin.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-log-out">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg> <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+
+            <nav id="sidebar">
+
+                <div class="navbar-nav theme-brand flex-row  text-center">
+                    <div class="nav-logo">
+                        <div class="nav-item theme-logo">
+                            <a href="./index.html">
+                                <img src="../src/assets/icons/logo2.png" class="navbar-logo" alt="logo">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="nav-item sidebar-toggle">
+                        <div class="btn-toggle sidebarCollapse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevrons-left">
+                                <polyline points="11 17 6 12 11 7"></polyline>
+                                <polyline points="18 17 13 12 18 7"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu">
+                        <a href="#dashboardElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Dashboard</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="dashboardElements"
+                            data-bs-parent="#accordionExample">
+                            <li class="">
+                                <a href="#"> Analytics </a>
+                            </li>
+                            <li>
+                                <a href="#"> Sales </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#masterElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>Master</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="masterElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Financial Year </a>
+                            </li>
+                            <li>
+                                <a href="./master/country.html"> Country </a>
+                            </li>
+                            <li>
+                                <a href="./master/state.html"> State </a>
+                            </li>
+                            <li>
+                                <a href="./master/city.html"> City </a>
+                            </li>
+                            <li>
+                                <a href="./master/town.html"> Town </a>
+                            </li>
+                            <li>
+                                <a href="./master/branch.html"> Branch </a>
+                            </li>
+                            <li>
+                                <a href="./master/service-city.html"> Service City </a>
+                            </li>
+                            <li>
+                                <a href="./master/users.html"> Users </a>
+                            </li>
+                            <li>
+                                <a href="#"> User Mapping </a>
+                            </li>
+                            <li>
+                                <a href="#"> Default Tariff </a>
+                            </li>
+                            <li>
+                                <a href="#"> Package Tariff </a>
+                            </li>
+                            <li>
+                                <a href="#"> Service Type Other</a>
+                            </li>
+                            <li>
+                                <a href="#"> Service Type Fixed </a>
+                            </li>
+                            <li>
+                                <a href="./master/driver.html"> Driver </a>
+                            </li>
+                            <li>
+                                <a href="#"> Bank </a>
+                            </li>
+                            <li>
+                                <a href="#"> Currency </a>
+                            </li>
+                            <li>
+                                <a href="#"> Color </a>
+                            </li>
+                            <li>
+                                <a href="#"> B2C Pax </a>
+                            </li>
+                            <li>
+                                <a href="#"> SD Tariff </a>
+                            </li>
+                            <li>
+                                <a href="#"> SD Bucket Inventory </a>
+                            </li>
+                            <li>
+                                <a href="#"> Blackout DateRange </a>
+                            </li>
+                            <li>
+                                <a href="#"> SD Pax </a>
+                            </li>
+                            <li>
+                                <a href="#"> Service City Blackout Date </a>
+                            </li>
+                            <li>
+                                <a href="#"> Client Bank </a>
+                            </li>
+                            <li>
+                                <a href="#"> Self Drive BO Tariff </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#fleetElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-taxi"></i>
+                                <span>Fleet Management</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="fleetElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./fleet-management/vehicle-make.html"> Vehicle Make </a>
+                            </li>
+                            <li>
+                                <a href="./fleet-management/vehicle-category.html"> Vehicle Category </a>
+                            </li>
+                            <li>
+                                <a href="./fleet-management/vehicle-type.html"> Vehicle Type </a>
+                            </li>
+                            <li>
+                                <a href="./fleet-management/vehicle-model.html"> Vehicle Model </a>
+                            </li>
+                            <li>
+                                <a href="./fleet-management/vehicle-acriss.html"> Vehicle Acriss </a>
+                            </li>
+                            <li>
+                                <a href="./fleet-management/fleet-profile.html"> Vehicle Profile </a>
+                            </li>
+                            <li>
+                                <a href="#">Vehicle Document</a>
+                            </li>
+                            <li>
+                                <a href="#">Fuel Type</a>
+                            </li>
+                            <li>
+                                <a href="#"> Fuel Pump </a>
+                            </li>
+                            <li>
+                                <a href="#"> Slip </a>
+                            </li>
+                            <li>
+                                <a href="#"> Fuel Transaction </a>
+                            </li>
+                            <li>
+                                <a href="#"> Fuel Rate Master </a>
+                            </li>
+                            <li>
+                                <a href="#"> Car Maintainance </a>
+                            </li>
+                            <li>
+                                <a href="#"> Fuel Rate Escalation </a>
+                            </li>
+                            <li>
+                                <a href="#"> NRK Approve/Reject </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#reservationElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Reservation</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="reservationElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Reservation </a>
+                            </li>
+                            <li>
+                                <a href="#"> Manifest </a>
+                            </li>
+                            <li>
+                                <a href="#"> Manifest Additional Report </a>
+                            </li>
+                            <li>
+                                <a href="#"> Interbranch Manifest </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Reservation </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Manifest </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Unbilled </a>
+                            </li>
+                            <li>
+                                <a href="#"> Vendor Booking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Feedback Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> Booking Documents </a>
+                            </li>
+                            <li>
+                                <a href="#"> Unbilled Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> Driver Tracking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Generate Multi Bk Invoice </a>
+                            </li>
+                            <li>
+                                <a href="#"> Toll Details </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="menu">
+                        <a href="#corporateElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-city"></i>
+                                <span>Corporate</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="corporateElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./element-alerts.html"> Comnpany Master </a>
+                            </li>
+                            <li>
+                                <a href="./element-avatar.html"> Address </a>
+                            </li>
+                            <li>
+                                <a href="./element-badges.html"> Instructions </a>
+                            </li>
+                            <li>
+                                <a href="./element-breadcrumbs.html"> Contract Details </a>
+                            </li>
+                            <li>
+                                <a href="./element-buttons.html"> Rate </a>
+                            </li>
+                            <li>
+                                <a href="./element-buttons-group.html"> Package Tariff </a>
+                            </li>
+                            <li>
+                                <a href="./element-color-library.html"> Rating Master </a>
+                            </li>
+                            <li>
+                                <a href="./element-dropdown.html"> Model Mapping </a>
+                            </li>
+                            <li>
+                                <a href="./element-infobox.html"> Receipt Branch Link </a>
+                            </li>
+                            <li>
+                                <a href="./element-loader.html"> Booker Master </a>
+                            </li>
+                            <li>
+                                <a href="./element-pagination.html"> Pax Master </a>
+                            </li>
+                            <li>
+                                <a href="./element-popovers.html"> Corp Cateogry Avg </a>
+                            </li>
+                            <li>
+                                <a href="./element-progressbar.html"> Corp Fuel Rate </a>
+                            </li>
+                            <li>
+                                <a href="./element-search.html"> Request Threshold </a>
+                            </li>
+                            <li>
+                                <a href="./element-tooltips.html"> Corporate API Credentials </a>
+                            </li>
+                            <li>
+                                <a href="./element-tooltips.html"> TDS Config </a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <!-- <li class="menu">
+                        <a href="#vendorElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>Vedor</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="vendorElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./element-alerts.html"> Vendor Master </a>
+                            </li>
+                            <li>
+                                <a href="./element-avatar.html"> Suplier Master </a>
+                            </li>
+                            <li>
+                                <a href="./element-badges.html"> Contract Details </a>
+                            </li>
+                            <li>
+                                <a href="./element-breadcrumbs.html"> Vendor Tariff </a>
+                            </li>
+                            <li>
+                                <a href="./element-buttons.html"> Vendor Shared % </a>
+                            </li>
+                            <li>
+                                <a href="./element-buttons-group.html"> Corp Shared % </a>
+                            </li>
+                            <li>
+                                <a href="./element-color-library.html"> Vendor-Corp Net Discount </a>
+                            </li>
+
+                        </ul>
+                    </li> -->
+
+                    <li class="menu">
+                        <a href="#organizationsElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <span>Organizations</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="organizationsElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./organizations/organizations-Master.html"> Organizations Master </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-type.html"> Organizations Type </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-Groups.html"> Organizations Groups </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-Entity.html"> Organizations Entity </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-Industry.html"> Organizations Industry </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#assetElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <span>Asset Mangement</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="assetElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Asset Type </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Account Head Master </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Apprval Level </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Purchase </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Purchase Chart </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#accounts" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                                <span>Accounts</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="accounts" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Invoice Chart </a>
+                            </li>
+                            <li>
+                                <a href="#">Interbranch Invoice Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> Edit Invoice </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Invoice </a>
+                            </li>
+                            <li>
+                                <a href="#"> Spot Billing </a>
+                            </li>
+                            <li>
+                                <a href="#"> Spot Shared Bill Booking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Attach Alloted Billing </a>
+                            </li>
+                            <li>
+                                <a href="#"> Fuel Bill Booking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Pending Receipt </a>
+                            </li>
+                            <li>
+                                <a href="#"> Receipt Reconcile</a>
+                            </li>
+                            <li>
+                                <a href="#"> Payment Mangement</a>
+                            </li>
+                            <li>
+                                <a href="#"> Pending Payments</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#exportElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-file-export"></i>
+                                <span>Export Data</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="exportElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#">Lorem </a>
+                            </li>
+                            <li>
+                                <a href="#"> lorem </a>
+                            </li>
+                            <li>
+                                <a href="#"> lorem </a>
+                            </li>
+                            <li>
+                                <a href="#"> lorem </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#escalationElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <span>Issue Escalation</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="escalationElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Lorem. </a>
+                            </li>
+                            <li>
+                                <a href="#"> Lorem. </a>
+                            </li>
+                            <li>
+                                <a href="#"> Lorem. </a>
+                            </li>
+                            <li>
+                                <a href="#"> Lorem. </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#reports" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-paste"></i>
+                                <span>Reports</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="reports" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Basic </a>
+                            </li>
+                            <li>
+                                <a href="#"> Input Group </a>
+                            </li>
+                            <li>
+                                <a href="#"> Layouts </a>
+                            </li>
+                            <li>
+                                <a href="#"> Validation </a>
+                            </li>
+                            <li>
+                                <a href="#"> Input Mask </a>
+                            </li>
+                            <li>
+                                <a href="#"> Tom Select </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#selfDriveElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-car-on"></i>
+                                <span>Self Drive</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="selfDriveElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Lorem1 </a>
+                            </li>
+                            <li>
+                                <a href="#"> Lorem1</a>
+                            </li>
+                            <li>
+                                <a href="#"> Lorem1 </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu active">
+                        <a href="./menu.html" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <span>Menu</span>
+                            </div>
 
                 <ul class="navbar-item theme-brand flex-row  text-center">
                     <li class="nav-item theme-logo">
@@ -237,6 +1138,114 @@
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg> <span>Profile</span>
                                 </a>
+                                <div class="d-flex breadcrumb-content">
+                                    <div class="page-header">
+
+                                        <div class="page-title">
+                                        </div>
+
+                                        <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active"><a href="./menu.html">Menu</a></li>
+                                                <!-- <li class="breadcrumb-item active" aria-current="page">Analytics</li> -->
+
+                                            </ol>
+                                        </nav>
+
+                                    </div>
+                                </div>
+
+                            </header>
+                        </div>
+                    </div>
+                    <!--  END BREADCRUMBS  -->
+
+                    <div class="row layout-top-spacing">
+
+                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <a href="./dashboard/index.html">
+                                <div class="card">
+                                    <div class="card-body custom-tab">
+                                        <i class="fa-solid fa-house"></i>
+                                        <h6 class="my-2">Dashboard</h6>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <a href="./master/index.html">
+                                <div class="card">
+                                    <div class="card-body custom-tab">
+                                        <i class="fa-solid fa-microchip"></i>
+                                        <h6 class="my-2">Master</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <a href="./fleet-management/index.html">
+                                <div class="card">
+                                    <div class="card-body custom-tab">
+                                        <i class="fa-solid fa-taxi"></i>
+                                        <h6 class="my-2">Fleet Management</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <a href="./reservation/index.html">
+                                <div class="card">
+                                    <div class="card-body custom-tab">
+                                        <i class="fa-solid fa-bolt"></i>
+                                        <h6 class="my-2">Reservation</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <a href="../vertical-light-menu/corporate/index.html">
+                                <div class="card">
+                                    <div class="card-body custom-tab">
+                                        <i class="fa-solid fa-city"></i>
+                                        <h6 class="my-2">Corporate</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> -->
+
+                        <!-- <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <a href="">
+                                <div class="card">
+                                    <div class="card-body custom-tab">
+                                        <i class="fa-solid fa-people-group"></i>
+                                        <h6 class="my-2">Vendor</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> -->
+
+                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <a href="./organizations/index.html">
+                                <div class="card">
+                                    <div class="card-body custom-tab">
+                                        <i class="fa-solid fa-sitemap"></i>
+                                        <h6 class="my-2">Organizations</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-2 col-md-3 col-sm-12 col-12 layout-spacing">
+                            <div class="card">
+                                <div class="card-body custom-tab">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                    <h6 class="my-2">Asset Management</h6>
+                                </div>
                             </div>
                             <div class="dropdown-item">
                                 <a href="app-mailbox.html">
@@ -706,6 +1715,38 @@
                                 <li>
                                     <a href="./organizations/organizations-Master.html"> Organizations Master </a>
                                 </li>
+                    <li class="menu">
+                        <a href="#organizationsElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <span>Organizations</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="organizationsElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="./organizations/organizations-Master.html"> Organizations Master </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-type.html"> Organizations Type </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-Groups.html"> Organizations Groups </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-Entity.html"> Organizations Entity </a>
+                            </li>
+                            <li>
+                                <a href="./organizations/organizations-Industry.html"> Organizations Industry </a>
+                            </li>
 
                             </ul>
                         </li>
@@ -744,6 +1785,40 @@
                                 </li>
                             </ul>
                         </li>
+                    <li class="menu">
+                        <a href="#assetElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
+                            <div class="">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <span>Asset Mangement</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="assetElements"
+                            data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="#"> Asset Type </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Account Head Master </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Apprval Level </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Purchase </a>
+                            </li>
+                            <li>
+                                <a href="#"> Asset Purchase Chart </a>
+                            </li>
+                        </ul>
+                    </li>
 
                         <li class="menu">
                             <a href="#accounts" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
