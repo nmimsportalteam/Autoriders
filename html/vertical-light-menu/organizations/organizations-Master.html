@@ -476,12 +476,12 @@
                             </li>
                             <li>
                                 <a href="../fleet-management/vehicle-category.html"> Vehicle Category </a>
-                            </li>                            
-                            <li>
-                                <a href="../fleet-management/vehicle-model.html"> Vehicle Model  </a>
                             </li>
                             <li>
-                                <a href="../fleet-management/vehicle-acriss.html"> Vehicle Acriss  </a>
+                                <a href="../fleet-management/vehicle-model.html"> Vehicle Model </a>
+                            </li>
+                            <li>
+                                <a href="../fleet-management/vehicle-acriss.html"> Vehicle Acriss </a>
                             </li>
                             <li>
                                 <a href="../fleet-management/fleet-profile.html"> Vehicle Profile </a>
@@ -1234,11 +1234,11 @@
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
 
                                     <!-- Organizations START -->
-                                    <div class="accordion-item">
+                                    <div class="accordion-item border border-3 rounded-2 mb-4">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                                aria-controls="panelsStayOpen-collapseOne">
+                                            <button class="accordion-button border-bottom fw-bold fs-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                                aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                                 Organizations
                                             </button>
                                         </h2>
@@ -1305,7 +1305,9 @@
                                                         </div>
 
                                                     </div>
-                                                    <button class="btn text-light btn-info">ADD & NEXT</button>
+                                                    <div class="text-end">
+                                                        <button class="btn text-light btn-info">+ ADD</button>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
@@ -1313,15 +1315,17 @@
                                     <!-- Organizations END-->
 
                                     <!-- Organizations-address START -->
-                                    <div class="accordion-item">
+                                    <div class="accordion-item border border-3 rounded-2 mb-4">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                                Organizations address
+                                            <button
+                                                class="accordion-button collapsed rounded-top border-bottom fw-bold fs-4"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseTwo">
+                                                Organizations Address
                                             </button>
                                         </h2>
-                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
                                             <div class="accordion-body">
                                                 <form action="">
                                                     <div class="row">
@@ -1342,6 +1346,7 @@
                                                             <div class="input-group mb-3 d-flex flex-column">
                                                                 <label class="form-label">Address</label>
                                                                 <input type="text" name="" id=""
+                                                                    placeholder="Enter Address"
                                                                     class="form-control w-100 rounded-2"
                                                                     style="background-color: #f1f2f3;">
                                                             </div>
@@ -1394,23 +1399,94 @@
                                                         </div>
 
                                                     </div>
-                                                    <button class="btn text-light btn-info">ADD & NEXT</button>
+                                                    <div class="text-end">
+                                                        <button class="btn text-light btn-info">+ ADD</button>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Organizations-address END -->
 
-                                    <!-- Organizations-contact-details START -->
-                                    <div class="accordion-item">
+                                    <!-- Organizations-account START -->
+                                    <div class="accordion-item border border-3 rounded-2 mb-4">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                                Organizations contact details
+                                            <button
+                                                class="accordion-button collapsed rounded-top border-bottom fw-bold fs-4"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseaccount" aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseaccount">
+                                                Organizations Account Details
                                             </button>
                                         </h2>
-                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                        <div id="panelsStayOpen-collapseaccount"
+                                            class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <form action="">
+                                                    <div class="row">
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Account Name</label>
+                                                                <input type="text" name="" id=""
+                                                                    placeholder="Enter Account Name..."
+                                                                    class="rounded-2 form-control w-100"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Bank Account</label>
+                                                                <input type="text" name="" id=""
+                                                                    placeholder="Enter Bank Account..."
+                                                                    class="rounded-2 form-control w-100"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Bank IFSC</label>
+                                                                <input type="text" name="" id=""
+                                                                    placeholder="Enter Bank IFSC..."
+                                                                    class="rounded-2 form-control w-100"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group mb-3 d-flex flex-column">
+                                                                <label class="form-label">Pan No.</label>
+                                                                <input type="text" id=""
+                                                                    placeholder="Enter Pan number..."
+                                                                    class="rounded-2 form-control w-100"
+                                                                    style="background-color: #f1f2f3;">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="text-end">
+                                                        <button class="btn text-light btn-info">+ ADD</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Organizations-account END -->
+
+                                    <!-- Organizations-contact-details START -->
+                                    <div class="accordion-item border border-3 rounded-2 mb-4">
+                                        <h2 class="accordion-header">
+                                            <button
+                                                class="accordion-button collapsed rounded-top border-bottom fw-bold fs-4"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseThree">
+                                                Organizations Contact Details
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
                                             <div class="accordion-body">
                                                 <form action="">
                                                     <div class="row">
@@ -1457,12 +1533,15 @@
 
 
                                                     </div>
-                                                    <button class="btn text-light btn-info">ADD & NEXT</button>
+                                                    <div class="text-end">
+                                                        <button class="btn text-light btn-info">+ ADD</button>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Organizations-contact-details END-->
+
                                 </div>
                             </div>
                             <!-- add-organizations END -->
