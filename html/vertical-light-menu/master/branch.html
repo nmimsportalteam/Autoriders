@@ -50,7 +50,7 @@
 
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
-                    <a href="../menu.html"> 
+                    <a href="../menu.html">
                         <img src="../../src/assets/icons/logo2.png" alt="Autoriders logo">
                     </a>
 
@@ -343,7 +343,8 @@
                     </li>
 
                     <li class="menu active">
-                        <a href="#masterElements" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <a href="#masterElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
                             <div class="">
                                 <i class="fa-solid fa-microchip"></i>
                                 <span>Master</span>
@@ -438,7 +439,8 @@
                     </li>
 
                     <li class="menu">
-                        <a href="#fleetElements" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <a href="#fleetElements" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">
                             <div class="">
                                 <i class="fa-solid fa-taxi"></i>
                                 <span>Fleet Management</span>
@@ -1114,8 +1116,10 @@
 
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-edit bs-tooltip me-2"
+                                                                data-bs-toggle="modal" data-bs-target="#editModal"
                                                                 data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                <i class="fa-regular fa-pen-to-square"></i>
+                                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                                     height="24" viewBox="0 0 24 24" fill="none"
                                                                     stroke="currentColor" stroke-width="2"
                                                                     stroke-linecap="round" stroke-linejoin="round"
@@ -1123,13 +1127,15 @@
                                                                     <path
                                                                         d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z">
                                                                     </path>
-                                                                </svg>
+                                                                </svg> -->
                                                             </a>
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-delete bs-tooltip"
+                                                                data-bs-toggle="modal" data-bs-target="#deleteModal"
                                                                 data-toggle="tooltip" data-placement="top"
                                                                 title="Delete">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                <i class="fa-regular fa-trash-can"></i>
+                                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                                     height="24" viewBox="0 0 24 24" fill="none"
                                                                     stroke="currentColor" stroke-width="2"
                                                                     stroke-linecap="round" stroke-linejoin="round"
@@ -1140,7 +1146,7 @@
                                                                     </path>
                                                                     <line x1="10" y1="11" x2="10" y2="17"></line>
                                                                     <line x1="14" y1="11" x2="14" y2="17"></line>
-                                                                </svg>
+                                                                </svg> -->
                                                             </a>
                                                         </div>
                                                     </td>
@@ -1291,6 +1297,106 @@
         </div>
     </div>
 
+    <!-- edit Modal START -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark fw-bold" id="exampleModalLabel">
+                        <i class="fa-regular fa-pen-to-square me-1"></i>
+                        Edit
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">Name</label>
+                        <input type="text" name="name" id="name" class="form-control w-100" placeholder="Enter name...">
+                    </div>
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">abbr</label>
+                        <input type="text" name="abbr" id="abbr" class="form-control w-100" placeholder="Enter abbr...">
+                    </div>
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">Select City</label>
+                        <select id="editselect-city" placeholder="Select a Vehicle City..." autocomplete="off">
+                            <option value="">Select a city...</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                            <option value="Banglore">Banglore</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">Select Town</label>
+                        <select id="editselect-town" placeholder="Select a Vehicle Town..." autocomplete="off">
+                            <option value="">Select a Town...</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                            <option value="Banglore">Banglore</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">Select Parent</label>
+                        <select id="editselect-parent" placeholder="Select a Vehicle Parent..." autocomplete="off">
+                            <option value="">Select a Parent...</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                            <option value="Banglore">Banglore</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">GST No.</label>
+                        <input type="text" name="gst-no" id="gst-no" class="form-control w-100"
+                            placeholder="Enter GST No. ...">
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--edit Modal END -->
+
+    <!-- delete modal START -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-dark">
+                    <h1 class="modal-title fs-5 fw-bold " id="exampleModalLabel">
+                        <i class="fa-solid fa-triangle-exclamation me-1 text-danger fs-4"></i>
+                        <!-- <i class="fa-regular fa-circle-xmark text-danger me-1"></i> -->
+                        Delete itam?
+                    </h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body text-center container">
+                    <!-- <i class="fa-regular fa-circle-xmark text-danger fs-3 me-2"></i> -->
+                    <i class="fa-solid fa-trash-can text-danger fs-3 me-2 rounded-circle border p-3"></i>
+                    <p class="fw-bold fs-5">Are you sure you want to delete this itam?</p>
+
+                </div>
+                <div class="text-center mb-3">
+                    <button type="button" class="btn btn-danger mx-2">Yes</button>
+                    <button type="button" class="btn mx-2" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- delete modal END -->
+
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../src/fontawesome-free-6.4.0-web/js/all.min.js"></script>
@@ -1327,6 +1433,31 @@
         });
 
         new TomSelect("#select-parent", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+
+        new TomSelect("#editselect-city", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#editselect-town", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#editselect-parent", {
             create: true,
             sortField: {
                 field: "text",

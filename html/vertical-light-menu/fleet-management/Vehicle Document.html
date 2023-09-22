@@ -5,15 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Organizations Groups</title>
+    <title>Vehicle Document</title>
     <link rel="icon" type="image/x-icon" href="../../src/assets/img/favicon.ico" />
     <link href="../../layouts/vertical-light-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../../layouts/vertical-light-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
     <script src="../../layouts/vertical-light-menu/loader.js"></script>
-
-    <!-- Tom-selecter-START -->
-    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
-    <!-- Tom-selecter-END -->
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
@@ -30,6 +26,7 @@
     <link href="../../src/assets/css/light/custom.css" rel="stylesheet" type="text/css" />
     <link href="../../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
 
 </head>
 
@@ -438,7 +435,7 @@
                         </ul>
                     </li>
 
-                    <li class="menu">
+                    <li class="menu active">
                         <a href="#fleetElements" data-bs-toggle="collapse" aria-expanded="false"
                             class="dropdown-toggle">
                             <div class="">
@@ -456,31 +453,31 @@
                         <ul class="collapse submenu list-unstyled" id="fleetElements"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="../fleet-management/vehicle-make.html"> Vehicle Make </a>
+                                <a href="./vehicle-make.html"> Vehicle Make </a>
                             </li>
                             <li>
-                                <a href="../fleet-management/vehicle-type.html"> Vehicle Type </a>
+                                <a href="./vehicle-category.html"> Vehicle Category </a>
                             </li>
                             <li>
-                                <a href="../fleet-management/vehicle-category.html"> Vehicle Category </a>
+                                <a href="./vehicle-type.html"> Vehicle Type </a>
                             </li>
                             <li>
-                                <a href="../fleet-management/vehicle-model.html"> Vehicle Model </a>
+                                <a href="./vehicle-model.html"> Vehicle Model </a>
                             </li>
                             <li>
-                                <a href="../fleet-management/vehicle-acriss.html"> Vehicle Acriss </a>
+                                <a href="./vehicle-acriss.html"> Vehicle Acriss </a>
+                            </li>
+                            <li class="active">
+                                <a href="./fleet-profile.html"> Vehicle Profile </a>
                             </li>
                             <li>
-                                <a href="../fleet-management/fleet-profile.html"> Vehicle Profile </a>
-                            </li>
-                            <li>
-                                <a href="#">Vehicle Document</a>
+                                <a href="./Vehicle Document.html">Vehicle Document</a>
                             </li>
                             <li>
                                 <a href="#">Fuel Type</a>
                             </li>
                             <li>
-                                <a href="#"> Fuel Pump </a>
+                                <a href="#"> Petrol Pump </a>
                             </li>
                             <li>
                                 <a href="#"> Slip </a>
@@ -570,150 +567,122 @@
                     </li>
 
                     <!-- <li class="menu">
-                        <a href="#corporateElements" data-bs-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle">
+                        <a href="#corporateElements" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="fa-solid fa-city"></i>
                                 <span>Corporate</span>
                             </div>
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                             </div>
                         </a>
-                        <ul class="collapse submenu list-unstyled" id="corporateElements"
-                            data-bs-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled" id="corporateElements" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#"> Comnpany Master </a>
+                                <a href="#"> Reservation </a>
                             </li>
                             <li>
-                                <a href="#"> Address </a>
+                                <a href="#"> Manifest </a>
                             </li>
                             <li>
-                                <a href="#"> Instructions </a>
+                                <a href="#"> Manifest Additional Report </a>
                             </li>
                             <li>
-                                <a href="#"> Contract Details </a>
+                                <a href="#"> Interbranch Manifest </a>
+                            </li>                            
+                            <li>
+                                <a href="#"> STR Reservation </a>
                             </li>
                             <li>
-                                <a href="#"> Rate </a>
+                                <a href="#"> STR Manifest </a>
                             </li>
                             <li>
-                                <a href="#"> Package Tariff </a>
+                                <a href="#"> STR Chart </a>
                             </li>
                             <li>
-                                <a href="#"> Rating Master </a>
+                                <a href="#"> STR Unbilled </a>
                             </li>
                             <li>
-                                <a href="#"> Model Mapping </a>
+                                <a href="#"> Vendor Booking </a>
                             </li>
                             <li>
-                                <a href="#"> Receipt Branch Link </a>
+                                <a href="#"> Feedback Chart </a>
                             </li>
                             <li>
-                                <a href="#"> Booker Master </a>
+                                <a href="#"> Booking Documents </a>
                             </li>
                             <li>
-                                <a href="#"> Pax Master </a>
+                                <a href="#"> Unbilled Chart </a>
                             </li>
                             <li>
-                                <a href="#"> Corp Cateogry Avg </a>
+                                <a href="#"> Driver Tracking </a>
                             </li>
                             <li>
-                                <a href="#"> Corp Fuel Rate </a>
+                                <a href="#"> Generate Multi Bk Invoice </a>
                             </li>
                             <li>
-                                <a href="#"> Request Threshold </a>
-                            </li>
-                            <li>
-                                <a href="#"> Corporate API Credentials </a>
-                            </li>
-                            <li>
-                                <a href="#"> TDS Config </a>
+                                <a href="#"> Toll Details </a>
                             </li>
                         </ul>
                     </li> -->
 
                     <!-- <li class="menu">
-                        <a href="#vendorElements" data-bs-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle">
+                        <a href="#vendorElements" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <i class="fa-solid fa-people-group"></i>
                                 <span>Vedor</span>
                             </div>
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                             </div>
                         </a>
-                        <ul class="collapse submenu list-unstyled" id="vendorElements"
-                            data-bs-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled" id="vendorElements" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#"> Vendor Master </a>
+                                <a href="#"> Reservation </a>
                             </li>
                             <li>
-                                <a href="#"> Suplier Master </a>
+                                <a href="#"> Manifest </a>
                             </li>
                             <li>
-                                <a href="#"> Contract Details </a>
+                                <a href="#"> Manifest Additional Report </a>
                             </li>
                             <li>
-                                <a href="#"> Vendor Tariff </a>
+                                <a href="#"> Interbranch Manifest </a>
+                            </li>                            
+                            <li>
+                                <a href="#"> STR Reservation </a>
                             </li>
                             <li>
-                                <a href="#"> Vendor Shared % </a>
+                                <a href="#"> STR Manifest </a>
                             </li>
                             <li>
-                                <a href="#"> Corp Shared % </a>
+                                <a href="#"> STR Chart </a>
                             </li>
                             <li>
-                                <a href="#"> Vendor-Corp Net Discount </a>
+                                <a href="#"> STR Unbilled </a>
                             </li>
-
+                            <li>
+                                <a href="#"> Vendor Booking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Feedback Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> Booking Documents </a>
+                            </li>
+                            <li>
+                                <a href="#"> Unbilled Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> Driver Tracking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Generate Multi Bk Invoice </a>
+                            </li>
+                            <li>
+                                <a href="#"> Toll Details </a>
+                            </li>
                         </ul>
                     </li> -->
-
-                    <li class="menu active">
-                        <a href="#organizationsElements" data-bs-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle">
-                            <div class="">
-                                <i class="fa-solid fa-sitemap"></i>
-                                <span>Organizations</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
-                            </div>
-                        </a>
-                        <ul class="collapse submenu list-unstyled" id="organizationsElements"
-                            data-bs-parent="#accordionExample">
-                            <li>
-                                <a href="./organizations-Master.html"> Organizations Master </a>
-                            </li>
-                            <li>
-                                <a href="./organizations-type.html"> Organizations Type </a>
-                            </li>
-                            <li class="active">
-                                <a href="./organizations-Groups.html"> Organizations Groups </a>
-                            </li>
-                            <li>
-                                <a href="./organizations-Entity.html"> Organizations Entity </a>
-                            </li>
-                            <li>
-                                <a href="./organizations-Industry.html"> Organizations Industry </a>
-                            </li>
-
-                        </ul>
-                    </li>
 
                     <li class="menu">
                         <a href="#assetElements" data-bs-toggle="collapse" aria-expanded="false"
@@ -733,19 +702,49 @@
                         <ul class="collapse submenu list-unstyled" id="assetElements"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#"> Asset Type </a>
+                                <a href="#"> Reservation </a>
                             </li>
                             <li>
-                                <a href="#"> Asset Account Head Master </a>
+                                <a href="#"> Manifest </a>
                             </li>
                             <li>
-                                <a href="#"> Asset Apprval Level </a>
+                                <a href="#"> Manifest Additional Report </a>
                             </li>
                             <li>
-                                <a href="#"> Asset Purchase </a>
+                                <a href="#"> Interbranch Manifest </a>
                             </li>
                             <li>
-                                <a href="#"> Asset Purchase Chart </a>
+                                <a href="#"> STR Reservation </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Manifest </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> STR Unbilled </a>
+                            </li>
+                            <li>
+                                <a href="#"> Vendor Booking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Feedback Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> Booking Documents </a>
+                            </li>
+                            <li>
+                                <a href="#"> Unbilled Chart </a>
+                            </li>
+                            <li>
+                                <a href="#"> Driver Tracking </a>
+                            </li>
+                            <li>
+                                <a href="#"> Generate Multi Bk Invoice </a>
+                            </li>
+                            <li>
+                                <a href="#"> Toll Details </a>
                             </li>
                         </ul>
                     </li>
@@ -766,40 +765,16 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="accounts" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#"> Invoice Chart </a>
+                                <a href="#"> Blank Page </a>
                             </li>
                             <li>
-                                <a href="#">Interbranch Invoice Chart </a>
+                                <a href="#"> Empty Page </a>
                             </li>
                             <li>
-                                <a href="#"> Edit Invoice </a>
+                                <a href="#"> Boxed </a>
                             </li>
                             <li>
-                                <a href="#"> STR Invoice </a>
-                            </li>
-                            <li>
-                                <a href="#"> Spot Billing </a>
-                            </li>
-                            <li>
-                                <a href="#"> Spot Shared Bill Booking </a>
-                            </li>
-                            <li>
-                                <a href="#"> Attach Alloted Billing </a>
-                            </li>
-                            <li>
-                                <a href="#"> Fuel Bill Booking </a>
-                            </li>
-                            <li>
-                                <a href="#"> Pending Receipt </a>
-                            </li>
-                            <li>
-                                <a href="#"> Receipt Reconcile</a>
-                            </li>
-                            <li>
-                                <a href="#"> Payment Mangement</a>
-                            </li>
-                            <li>
-                                <a href="#"> Pending Payments</a>
+                                <a href="#"> Collapsed Menu </a>
                             </li>
                         </ul>
                     </li>
@@ -822,16 +797,16 @@
                         <ul class="collapse submenu list-unstyled" id="exportElements"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#">Lorem </a>
+                                <a href="#"> Basic </a>
                             </li>
                             <li>
-                                <a href="#"> lorem </a>
+                                <a href="#"> Striped </a>
                             </li>
                             <li>
-                                <a href="#"> lorem </a>
+                                <a href="#"> Custom </a>
                             </li>
                             <li>
-                                <a href="#"> lorem </a>
+                                <a href="#"> Miscellaneous </a>
                             </li>
                         </ul>
                     </li>
@@ -854,16 +829,16 @@
                         <ul class="collapse submenu list-unstyled" id="escalationElements"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#"> Lorem. </a>
+                                <a href="#"> Basic </a>
                             </li>
                             <li>
-                                <a href="#"> Lorem. </a>
+                                <a href="#"> Striped </a>
                             </li>
                             <li>
-                                <a href="#"> Lorem. </a>
+                                <a href="#"> Custom </a>
                             </li>
                             <li>
-                                <a href="#"> Lorem. </a>
+                                <a href="#"> Miscellaneous </a>
                             </li>
                         </ul>
                     </li>
@@ -901,7 +876,48 @@
                             <li>
                                 <a href="#"> Tom Select </a>
                             </li>
-
+                            <li>
+                                <a href="#"> Tagify </a>
+                            </li>
+                            <li>
+                                <a href="#"> TouchSpin </a>
+                            </li>
+                            <li>
+                                <a href="#"> Maxlength </a>
+                            </li>
+                            <li>
+                                <a href="#"> Checkbox </a>
+                            </li>
+                            <li>
+                                <a href="#"> Radio </a>
+                            </li>
+                            <li>
+                                <a href="#"> Switches </a>
+                            </li>
+                            <li>
+                                <a href="#"> Wizards </a>
+                            </li>
+                            <li>
+                                <a href="#"> File Upload </a>
+                            </li>
+                            <li>
+                                <a href="#"> Quill Editor </a>
+                            </li>
+                            <li>
+                                <a href="#"> Markdown Editor </a>
+                            </li>
+                            <li>
+                                <a href="#"> Date Time Picker </a>
+                            </li>
+                            <li>
+                                <a href="#"> Slider </a>
+                            </li>
+                            <li>
+                                <a href="#"> Clipboard </a>
+                            </li>
+                            <li>
+                                <a href="#"> Auto Complete </a>
+                            </li>
                         </ul>
                     </li>
 
@@ -923,15 +939,65 @@
                         <ul class="collapse submenu list-unstyled" id="selfDriveElements"
                             data-bs-parent="#accordionExample">
                             <li>
-                                <a href="#"> Lorem1 </a>
+                                <a href="#"> Basic </a>
                             </li>
                             <li>
-                                <a href="#"> Lorem1</a>
+                                <a href="#"> Input Group </a>
                             </li>
                             <li>
-                                <a href="#"> Lorem1 </a>
+                                <a href="#"> Layouts </a>
                             </li>
-
+                            <li>
+                                <a href="#"> Validation </a>
+                            </li>
+                            <li>
+                                <a href="#"> Input Mask </a>
+                            </li>
+                            <li>
+                                <a href="#"> Tom Select </a>
+                            </li>
+                            <li>
+                                <a href="#"> Tagify </a>
+                            </li>
+                            <li>
+                                <a href="#"> TouchSpin </a>
+                            </li>
+                            <li>
+                                <a href="#"> Maxlength </a>
+                            </li>
+                            <li>
+                                <a href="#"> Checkbox </a>
+                            </li>
+                            <li>
+                                <a href="#"> Radio </a>
+                            </li>
+                            <li>
+                                <a href="#"> Switches </a>
+                            </li>
+                            <li>
+                                <a href="#"> Wizards </a>
+                            </li>
+                            <li>
+                                <a href="#"> File Upload </a>
+                            </li>
+                            <li>
+                                <a href="#"> Quill Editor </a>
+                            </li>
+                            <li>
+                                <a href="#"> Markdown Editor </a>
+                            </li>
+                            <li>
+                                <a href="#"> Date Time Picker </a>
+                            </li>
+                            <li>
+                                <a href="#"> Slider </a>
+                            </li>
+                            <li>
+                                <a href="#"> Clipboard </a>
+                            </li>
+                            <li>
+                                <a href="#"> Auto Complete </a>
+                            </li>
                         </ul>
                     </li>
 
@@ -988,9 +1054,9 @@
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="../menu.html">Menu</a></li>
                                                 <li class="breadcrumb-item"><a
-                                                        href="../organizations/index.html">Organizations</a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Organizations
-                                                    Groups</li>
+                                                        href="../fleet-management/index.html">Fleet Mangement</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Vehicle Document
+                                                </li>
 
                                             </ol>
                                         </nav>
@@ -1007,11 +1073,12 @@
                         <div class="table-template">
                             <div class="table-header">
                                 <div class="table-title">
-                                    <h3>Organizations Groups</h3>
+                                    <h3>Vehicle Document</h3>
                                 </div>
                                 <div class="table-actions">
                                     <button style="background: none; border: none;" data-bs-toggle="modal"
-                                        data-bs-target="#add-groups-modal"><i class="fa-regular fa-square-plus"></i>
+                                        data-bs-target="#add-vehicle-document-modal"><i
+                                            class="fa-regular fa-square-plus"></i>
                                     </button>
                                 </div>
                             </div>
@@ -1024,24 +1091,35 @@
                                         <table class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col"> Sr No. </th>
-
-                                                    <th scope="col">Code</th>
+                                                    <th scope="col">Sr. No.</th>
+                                                    <th scope="col">Vehicle Model</th>
+                                                    <th scope="col">Registration Number</th>
+                                                    <th scope="col">Vehicle Document</th>
                                                     <th class="text-center" scope="col"> Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
-
-                                                    <td></td>
+                                                    <td>Toyota Innova</td>
+                                                    <td>AP05TC5677</td>
+                                                    <td class="flex-wrap">
+                                                        <button class="btn btn-info mx-2" data-bs-toggle="modal"
+                                                            data-bs-target="#viewModal">View
+                                                            Document</button>
+                                                        <button class="btn btn-info mx-2" data-bs-toggle="modal"
+                                                            data-bs-target="#add-document-Modal">Add
+                                                            Document</button>
+                                                    </td>
                                                     <td class="text-center">
                                                         <div class="action-btns">
 
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-edit bs-tooltip me-2"
+                                                                data-bs-toggle="modal" data-bs-target="#editModal"
                                                                 data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                <i class="fa-regular fa-pen-to-square"></i>
+                                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                                     height="24" viewBox="0 0 24 24" fill="none"
                                                                     stroke="currentColor" stroke-width="2"
                                                                     stroke-linecap="round" stroke-linejoin="round"
@@ -1049,13 +1127,15 @@
                                                                     <path
                                                                         d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z">
                                                                     </path>
-                                                                </svg>
+                                                                </svg> -->
                                                             </a>
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-delete bs-tooltip"
+                                                                data-bs-toggle="modal" data-bs-target="#deleteModal"
                                                                 data-toggle="tooltip" data-placement="top"
                                                                 title="Delete">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                <i class="fa-regular fa-trash-can"></i>
+                                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                                     height="24" viewBox="0 0 24 24" fill="none"
                                                                     stroke="currentColor" stroke-width="2"
                                                                     stroke-linecap="round" stroke-linejoin="round"
@@ -1066,7 +1146,7 @@
                                                                     </path>
                                                                     <line x1="10" y1="11" x2="10" y2="17"></line>
                                                                     <line x1="14" y1="11" x2="14" y2="17"></line>
-                                                                </svg>
+                                                                </svg> -->
                                                             </a>
                                                         </div>
                                                     </td>
@@ -1074,14 +1154,22 @@
 
                                                 <tr>
                                                     <td>2</td>
-
-                                                    <td></td>
-
+                                                    <td>Toyota Innova</td>
+                                                    <td>AP05TC5677</td>
+                                                    <td>
+                                                        <button class="btn btn-info mx-2" data-bs-toggle="modal"
+                                                            data-bs-target="#viewModal">View
+                                                            Document</button>
+                                                        <button class="btn btn-info mx-2" data-bs-toggle="modal"
+                                                            data-bs-target="#add-document-Modal">Add
+                                                            Document</button>
+                                                    </td>
                                                     <td class="text-center">
                                                         <div class="action-btns">
 
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-edit bs-tooltip me-2"
+                                                                data-bs-toggle="modal" data-bs-target="#editModal"
                                                                 data-toggle="tooltip" data-placement="top" title="Edit">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                                     height="24" viewBox="0 0 24 24" fill="none"
@@ -1095,6 +1183,7 @@
                                                             </a>
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-delete bs-tooltip"
+                                                                data-bs-toggle="modal" data-bs-target="#deleteModal"
                                                                 data-toggle="tooltip" data-placement="top"
                                                                 title="Delete">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1114,17 +1203,19 @@
                                                     </td>
                                                 </tr>
 
-                                                <tr>
-                                                    <td>3</td>
-
-                                                    <td></td>
-
-                                                    <td class="text-center">
+                                                <!-- <tr>
+                                                    <td>2</td>
+                                                    <td>Toyota Innova</td>
+                                                    <td>AP05TC5677</td>
+                                                    <td>Document.jpg</td>
+                                                    <td>
                                                         <div class="action-btns">
 
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-edit bs-tooltip me-2"
+                                                                data-bs-toggle="modal" data-bs-target="#editModal"
                                                                 data-toggle="tooltip" data-placement="top" title="Edit">
+
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                                     height="24" viewBox="0 0 24 24" fill="none"
                                                                     stroke="currentColor" stroke-width="2"
@@ -1135,6 +1226,7 @@
                                                                     </path>
                                                                 </svg>
                                                             </a>
+
                                                             <a href="javascript:void(0);"
                                                                 class="action-btn btn-delete bs-tooltip"
                                                                 data-toggle="tooltip" data-placement="top"
@@ -1154,50 +1246,7 @@
                                                             </a>
                                                         </div>
                                                     </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>4</td>
-
-                                                    <td></td>
-
-                                                    <td class="text-center">
-                                                        <div class="action-btns">
-
-                                                            <a href="javascript:void(0);"
-                                                                class="action-btn btn-edit bs-tooltip me-2"
-                                                                data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                                    class="feather feather-edit-2">
-                                                                    <path
-                                                                        d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z">
-                                                                    </path>
-                                                                </svg>
-                                                            </a>
-                                                            <a href="javascript:void(0);"
-                                                                class="action-btn btn-delete bs-tooltip"
-                                                                data-toggle="tooltip" data-placement="top"
-                                                                title="Delete">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                                    class="feather feather-trash-2">
-                                                                    <polyline points="3 6 5 6 21 6"></polyline>
-                                                                    <path
-                                                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                                    </path>
-                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
-                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
-                                                                </svg>
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
+                                                </tr> -->
 
                                             </tbody>
                                         </table>
@@ -1230,13 +1279,13 @@
     </div>
     <!-- END MAIN CONTAINER -->
 
-    <!--ADD Modal -->
-    <div class="modal fade" id="add-groups-modal" tabindex="-1" role="dialog" aria-labelledby="add-groups-modal"
-        aria-hidden="true">
+    <!--ADD Modal START-->
+    <div class="modal fade" id="add-vehicle-document-modal" tabindex="-1" role="dialog"
+        aria-labelledby="add-vehicle-document-modal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content modal-inputform">
                 <div class="modal-header  modal-inputform-header">
-                    <h5 class="modal-title text-dark" id="">ADD Organizations groups</h5>
+                    <h5 class="modal-title text-dark" id="">ADD Vehicle Document</h5>
                     <button type="button" class="btn fs-4 text-dark" data-bs-dismiss="modal" aria-label="Close"><i
                             class="fas fa-times"></i></button>
 
@@ -1246,15 +1295,25 @@
                         <div class="select-fields">
 
                             <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Code</label>
-                                <input type="text" name="country" id="country-name" class="form-control w-100">
+                                <label for="vehicle-model" class="form-label">Vehicle Model</label>
+                                <input type="text" name="" id="vehicle-model" class="form-control w-100"
+                                    placeholder="Enter Vehicle Model...">
+                            </div>
+                            <div class="input-group mb-3 d-flex flex-column">
+                                <label for="registration-number" class="form-label">Registration Number</label>
+                                <input type="text" name="" id="registration-number" class="form-control w-100"
+                                    placeholder="Enter Registration Number...">
                             </div>
 
+                            <div class="input-group mb-3 d-flex flex-column">
+                                <label for="entity-type" class="form-label">Vehicle Document</label>
+                                <input type="file" name="" multiple id="entity-type" class="form-control w-100"
+                                    placeholder="Enter Registration Number...">
+                            </div>
 
                             <!-- <div class="mb-3 d-grid gap-2">
                                 <button class="btn text-light add-country btn-info">ADD</button>
                             </div> -->
-
                         </div>
 
                     </div>
@@ -1265,6 +1324,129 @@
             </div>
         </div>
     </div>
+    <!--ADD Modal END -->
+
+    <!-- edit modal START -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold text-dark" id="exampleModalLabel">Edit</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label for="vehicle-model" class="form-label">Vehicle Model</label>
+                        <input type="text" name="" id="vehicle-model" class="form-control w-100"
+                            placeholder="Enter Vehicle Model...">
+                    </div>
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label for="registration-number" class="form-label">Registration Number</label>
+                        <input type="text" name="" id="registration-number" class="form-control w-100"
+                            placeholder="Enter Registration Number...">
+                    </div>
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label for="entity-type" class="form-label">Vehicle Document</label>
+                        <input type="file" name="" id="entity-type" class="form-control w-100"
+                            placeholder="Enter Registration Number...">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit modal END -->
+
+    <!-- delete modal START -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-dark">
+                    <h1 class="modal-title fs-5 fw-bold " id="exampleModalLabel">
+                        <i class="fa-solid fa-triangle-exclamation me-1 text-danger fs-4"></i>
+                        <!-- <i class="fa-regular fa-circle-xmark text-danger me-1"></i> -->
+                        Delete itam?
+                    </h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body text-center container">
+                    <!-- <i class="fa-regular fa-circle-xmark text-danger fs-3 me-2"></i> -->
+                    <i class="fa-solid fa-trash-can text-danger fs-3 me-2 rounded-circle border p-3"></i>
+                    <p class="fw-bold fs-5">Are you sure you want to delete this itam?</p>
+
+                </div>
+                <div class="text-center mb-3">
+                    <button type="button" class="btn btn-danger mx-2">Yes</button>
+                    <button type="button" class="btn mx-2" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- delete modal END -->
+
+
+    <!-- View Document modal START -->
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">View Document</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body container">
+
+                    <ul>
+                        <li>Document.jpg</li>
+                        <li>Document.jpg</li>
+                        <li>Document.jpg</li>
+                        <li>Document.jpg</li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- View Document modal END -->
+
+    <!-- Add Document modal START -->
+    <div class="modal fade" id="add-document-Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add Document</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label for="entity-type" class="form-label">Vehicle Document</label>
+                        <input type="file" name="" id="entity-type" class="form-control w-100"
+                            placeholder="Enter Registration Number...">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Document modal END -->
+
+
+
+
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1279,49 +1461,107 @@
     <script src="../../src/plugins/src/apex/apexcharts.min.js"></script>
     <script src="../../src/assets/js/dashboard/dash_1.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-
-    <!-- tom-selecter-script-START -->
     <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <!-- CUSTOM JS SCRIPT -->
     <script>
-        new TomSelect(".tom-select", {
+        // SELECT INITIALIZATION
+        new TomSelect("#select-registration", {
             create: true,
             sortField: {
                 field: "text",
                 direction: "asc"
             }
-        }); 
-    </script>
-    <!-- tom-selecter-script-END -->
+        });
 
-    <!-- CUSTOM JS SCRIPT -->
-    <script>
-        let addcountry = document.querySelector('.add-country');
-        let countryObject = {
-            countryName: "",
-            countryAbbr: ""
-        }
+        new TomSelect("#select-service-city", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
 
-        let addTable = document.querySelector('#add-more-country-table tbody');
+        new TomSelect("#select-ownership", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#select-vendor", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+
+        let addVehicleModel = document.querySelector('.add-fleet-profile');
+        let vehicleModelObject = {
+            make: '',
+            category: '',
+            model: '',
+            modelYear: '',
+            acrissCode: '',
+            doorCount: '',
+            fuelCapacity: '',
+            paxCapacity: '',
+            luggageCapacity: '',
+            seatCount: '',
+            fuelAvgKm: '',
+            fuelAvgMin: '',
+            isAC: '',
+            isAutoTransmission: ''
+        };
+
+        let addTable = document.querySelector('#add-more-fleet-profile-table tbody');
         let tableRow = ``;
         let count = 0;
 
-        addcountry.addEventListener('click', function () {
+        addVehicleModel.addEventListener('click', function () {
 
-            countryObject.countryName = document.querySelector('#country-name').value;
-            countryObject.countryAbbr = document.querySelector('#country-abbr').value;
+            vehicleModelObject.make = document.querySelector('#select-make').value;
+            vehicleModelObject.category = document.querySelector('#select-category').value;
+            vehicleModelObject.model = document.querySelector('#vehicle-model').value;
+            vehicleModelObject.modelYear = document.querySelector('#model-year').value;
+            vehicleModelObject.acrissCode = document.querySelector('#acriss-code').value;
+            vehicleModelObject.doorCount = document.querySelector('#door-count').value;
+            vehicleModelObject.fuelCapacity = document.querySelector('#fuel-capacity').value;
+            vehicleModelObject.paxCapacity = document.querySelector('#pax-capacity').value;
+            vehicleModelObject.luggageCapacity = document.querySelector('#luggage-capacity').value;
+            vehicleModelObject.seatCount = document.querySelector('#seat-count').value;
+            vehicleModelObject.fuelAvgKm = document.querySelector('#fuel-average-km').value;
+            vehicleModelObject.fuelAvgMin = document.querySelector('#fuel-average-min').value;
+            vehicleModelObject.isAC = document.querySelector('#is-ac').checked == true ? 'Yes' : 'No';
+            vehicleModelObject.isAutoTransmission = document.querySelector('#is-auto').checked == true ? 'Yes' : 'No';
+
+
 
             tableRow = `<tr>
                             <td>${++count}</td>
-                            <td>${countryObject.countryName}</td>
-                            <td>${countryObject.countryAbbr}</td>
-                            
+                            <td>${vehicleModelObject.make}</td>
+                            <td>${vehicleModelObject.category}</td>
+                            <td>${vehicleModelObject.model}</td>
+                            <td>${vehicleModelObject.modelYear}</td>
+                            <td>${vehicleModelObject.acrissCode}</td>
+                            <td>${vehicleModelObject.doorCount}</td>
+                            <td>${vehicleModelObject.fuelCapacity}</td>
+                            <td>${vehicleModelObject.paxCapacity}</td>
+                            <td>${vehicleModelObject.luggageCapacity}</td>
+                            <td>${vehicleModelObject.seatCount}</td>
+                            <td>${vehicleModelObject.fuelAvgKm}</td>
+                            <td>${vehicleModelObject.fuelAvgMin}</td>
+                            <td>${vehicleModelObject.isAC}</td>
+                            <td>${vehicleModelObject.isAutoTransmission}</td>
                             <td><button class = 'delete-row'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
                                 </button></td>
                         </tr>`
 
             addTable.insertAdjacentHTML('beforeend', tableRow)
-            console.log('clicked!!', countryObject)
+            console.log('clicked!!', vehicleModelObject)
 
         })
 
@@ -1332,6 +1572,20 @@
                 ele.target.closest('tr').remove();
             }
         })
+
+        //Add From Form
+        let makeAddBtn = document.querySelector('#add-vehicle-model-modal .add-vehicle-make');
+        let vehicleMakeOption = ``;
+        makeAddBtn.addEventListener('click', function () {
+            vehicleMake = document.querySelector('#vehicle-make').value;
+            vehicleMakeOption = `<option>${vehicleMake}</option>`;
+
+            document.querySelector('#add-vehicle-model-modal #select-make').insertAdjacentHTML('beforeend', vehicleMakeOption);
+
+        })
+
+
+
     </script>
 
 </body>

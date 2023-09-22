@@ -463,12 +463,12 @@
                             </li>
                             <li>
                                 <a href="../fleet-management/vehicle-category.html"> Vehicle Category </a>
-                            </li>                            
-                            <li>
-                                <a href="../fleet-management/vehicle-model.html"> Vehicle Model  </a>
                             </li>
                             <li>
-                                <a href="../fleet-management/vehicle-acriss.html"> Vehicle Acriss  </a>
+                                <a href="../fleet-management/vehicle-model.html"> Vehicle Model </a>
+                            </li>
+                            <li>
+                                <a href="../fleet-management/vehicle-acriss.html"> Vehicle Acriss </a>
                             </li>
                             <li>
                                 <a href="../fleet-management/fleet-profile.html"> Vehicle Profile </a>
@@ -1012,7 +1012,7 @@
                                 </div>
                                 <div class="table-actions">
                                     <button style="background: none; border: none;" data-bs-toggle="modal"
-                                        data-bs-target="#add-country-modal"><i class="fa-regular fa-square-plus"></i>
+                                        data-bs-target="#add-entity-modal"><i class="fa-regular fa-square-plus"></i>
                                     </button>
                                 </div>
                             </div>
@@ -1231,71 +1231,31 @@
     </div>
     <!-- END MAIN CONTAINER -->
 
-    <!--ADD Modal -->
-    <div class="modal fade" id="add-country-modal" tabindex="-1" role="dialog" aria-labelledby="add-country-modal"
+    <!--ADD Modal START-->
+    <div class="modal fade" id="add-entity-modal" tabindex="-1" role="dialog" aria-labelledby="add-entity-modal"
         aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content modal-inputform">
                 <div class="modal-header  modal-inputform-header">
-                    <h5 class="modal-title text-dark">ADD COUNTRY</h5>
+                    <h5 class="modal-title text-dark" id="">ADD Organizations Entity</h5>
                     <button type="button" class="btn fs-4 text-dark" data-bs-dismiss="modal" aria-label="Close"><i
                             class="fas fa-times"></i></button>
 
                 </div>
                 <div class="modal-body">
                     <div class="row info-container">
-                        <div class="col-md-3 select-fields">
+                        <div class="select-fields">
 
                             <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Name</label>
-                                <input type="text" name="country" id="country-name" class="form-control w-100">
+                                <label for="entity-type" class="form-label">Entity Type</label>
+                                <input type="text" name="" id="entity-type" class="form-control w-100">
                             </div>
 
-                            <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">abbr</label>
-                                <input type="text" name="country" id="country-abbr" class="form-control w-100">
-                            </div>
-
-                            <div class="mb-3 d-grid gap-2">
+                            <!-- <div class="mb-3 d-grid gap-2">
                                 <button class="btn text-light add-country btn-info">ADD</button>
-                            </div>
-
-
+                            </div> -->
                         </div>
-                        <div class="col-md-9 selected-fields">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="add-more-country-table">
-                                    <thead>
-                                        <th>Sr No.</th>
-                                        <th>Country</th>
-                                        <th>abbr</th>
-                                        <th>Action</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>India</td>
-                                            <td>THN</td>
-                                            <td>
-                                                <button class="delete-row">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash-2">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                        <line x1="10" y1="11" x2="10" y2="17"></line>
-                                                        <line x1="14" y1="11" x2="14" y2="17"></line>
-                                                    </svg>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -1304,6 +1264,7 @@
             </div>
         </div>
     </div>
+    <!--ADD Modal END -->
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>

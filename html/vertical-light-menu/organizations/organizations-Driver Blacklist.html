@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Organizations Groups</title>
+    <title>Organizations Driver Blacklist</title>
     <link rel="icon" type="image/x-icon" href="../../src/assets/img/favicon.ico" />
     <link href="../../layouts/vertical-light-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../../layouts/vertical-light-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -702,13 +702,13 @@
                             <li>
                                 <a href="./organizations-type.html"> Organizations Type </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="./organizations-Groups.html"> Organizations Groups </a>
                             </li>
                             <li>
                                 <a href="./organizations-Entity.html"> Organizations Entity </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="./organizations-Industry.html"> Organizations Industry </a>
                             </li>
 
@@ -990,7 +990,7 @@
                                                 <li class="breadcrumb-item"><a
                                                         href="../organizations/index.html">Organizations</a></li>
                                                 <li class="breadcrumb-item active" aria-current="page">Organizations
-                                                    Groups</li>
+                                                    Driver Blacklist</li>
 
                                             </ol>
                                         </nav>
@@ -1007,11 +1007,11 @@
                         <div class="table-template">
                             <div class="table-header">
                                 <div class="table-title">
-                                    <h3>Organizations Groups</h3>
+                                    <h3>Organizations Driver Blacklist</h3>
                                 </div>
                                 <div class="table-actions">
                                     <button style="background: none; border: none;" data-bs-toggle="modal"
-                                        data-bs-target="#add-groups-modal"><i class="fa-regular fa-square-plus"></i>
+                                        data-bs-target="#add-industry-modal"><i class="fa-regular fa-square-plus"></i>
                                     </button>
                                 </div>
                             </div>
@@ -1026,7 +1026,7 @@
                                                 <tr>
                                                     <th scope="col"> Sr No. </th>
 
-                                                    <th scope="col">Code</th>
+                                                    <th scope="col">Industry type</th>
                                                     <th class="text-center" scope="col"> Actions</th>
                                                 </tr>
                                             </thead>
@@ -1198,7 +1198,6 @@
                                                     </td>
                                                 </tr>
 
-
                                             </tbody>
                                         </table>
 
@@ -1209,9 +1208,7 @@
 
                         </div>
 
-
                     </div>
-
 
                 </div>
 
@@ -1230,13 +1227,13 @@
     </div>
     <!-- END MAIN CONTAINER -->
 
-    <!--ADD Modal -->
-    <div class="modal fade" id="add-groups-modal" tabindex="-1" role="dialog" aria-labelledby="add-groups-modal"
+    <!--ADD Modal START-->
+    <div class="modal fade" id="add-industry-modal" tabindex="-1" role="dialog" aria-labelledby="add-industry-modal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content modal-inputform">
                 <div class="modal-header  modal-inputform-header">
-                    <h5 class="modal-title text-dark" id="">ADD Organizations groups</h5>
+                    <h5 class="modal-title text-dark" id="">ADD Organizations Driver Blacklist</h5>
                     <button type="button" class="btn fs-4 text-dark" data-bs-dismiss="modal" aria-label="Close"><i
                             class="fas fa-times"></i></button>
 
@@ -1246,16 +1243,14 @@
                         <div class="select-fields">
 
                             <div class="input-group mb-3 d-flex flex-column">
-                                <label class="form-label">Code</label>
-                                <input type="text" name="country" id="country-name" class="form-control w-100">
+                                <label for="entity-type" class="form-label">Industry Type</label>
+                                <input type="text" name="" id="entity-type" class="form-control w-100">
                             </div>
-
 
                             <!-- <div class="mb-3 d-grid gap-2">
                                 <button class="btn text-light add-country btn-info">ADD</button>
                             </div> -->
-
-                        </div>
+                        </div>                      
 
                     </div>
                 </div>
@@ -1265,6 +1260,7 @@
             </div>
         </div>
     </div>
+    <!--ADD Modal END -->
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
