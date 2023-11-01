@@ -1257,36 +1257,39 @@
                 <div class="modal-body container">
 
                     <div class="input-group mb-3 d-flex flex-column">
-                        <label class="form-label">Country Name</label>
-                        <select id="edit-city-country-name" autocomplete="off" style="line-height: 30px;">
-                            <option value="">Select a Country...</option>
-                            <option value=""></option>
-                            <option value="India">India</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group mb-3 d-flex flex-column">
-                        <label class="form-label">State Name</label>
-                        <select id="edit-city-state-name" autocomplete="off" style="line-height: 30px;">
-                            <option value="">Select a State...</option>
-                            <option value=""></option>
-                            <option value="Maharashtra">Maharashtra</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group mb-3 d-flex flex-column">
                         <label class="form-label">City</label>
-                        <select id="edit-city-name" autocomplete="off" style="line-height: 30px;">
-                            <option value="">Select a City...</option>
-                            <option value="Thane">Thane</option>
+                        <select id="editservice-city" placeholder="Select a Service City..." autocomplete="off">
+                            <option value="">Select a city...</option>
                             <option value="Mumbai">Mumbai</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                            <option value="Banglore">Banglore</option>
                         </select>
                     </div>
 
                     <div class="input-group mb-3 d-flex flex-column">
-                        <label class="form-label">abbr</label>
-                        <input type="text" name="city-abbr" id="city-abbr" class="form-control w-100">
+                        <label class="form-label">Branch</label>
+                        <select id="editservice-branch" placeholder="Select a Service City Branch..."
+                            autocomplete="off">
+                            <option value="">Select a branch...</option>
+                            <option value="Branch1">Branch1</option>
+                            <option value="Branch2">Branch2</option>
+                            <option value="Branch3">Branch3</option>
+                        </select>
                     </div>
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">Turnaround Minutes</label>
+                        <input type="number" name="turn-mins" id="turn-mins" class="form-control w-100"
+                            placeholder="Enter Turnaround Minutes ...">
+                    </div>
+
+                    <div class="input-group mb-3 d-flex flex-column">
+                        <label class="form-label">Grace Minutes</label>
+                        <input type="number" name="grace-mins" id="grace-mins" class="form-control w-100"
+                            placeholder="Enter Grace Minutes...">
+                    </div>
+
+
 
 
 
@@ -1357,6 +1360,22 @@
         });
 
         new TomSelect("#service-branch", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#editservice-city", {
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#editservice-branch", {
             create: true,
             sortField: {
                 field: "text",
